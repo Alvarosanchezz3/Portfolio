@@ -121,11 +121,7 @@ function App() {
               <p>HTML and CSS intensive - path to REACT<br/>B1 English Certificate Cambridge<br/>B2 English Certificate EF SET </p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
               <h3>Education</h3>
               <p>Baccalaureate<br />DAM top grade</p>
             </div>
@@ -243,14 +239,14 @@ function App() {
             </div>
             <h2 class="technologies-sub-title project-title">TWD Netflix page</h2>
             <div class="btn-container1">
-                <img src="./assets/technologies/html.png" class="icon"/>
-                <img src="./assets/technologies/sass.png" class="icon"/>
-                <img src="./assets/technologies/js.png" class="icon"/>
+                <img src="./assets/technologies/html.png" alt='html' class="icon"/>
+                <img src="./assets/technologies/sass.png" alt='css' class="icon"/>
+                <img src="./assets/technologies/js.png" alt='js' class="icon"/>
             </div>
             <div class="repository">
               <p>Link to the github repository: </p>
               <a href="https://github.com/Alvarosanchezz3/NetflixPage" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="My Github profile" class="icon"/>
+                <img src="./assets/github.png" alt="Github" class="icon"/>
               </a>
             </div> 
           </div>
@@ -261,14 +257,14 @@ function App() {
             </div>
             <h2 class="technologies-sub-title project-title">Nike card</h2>
             <div class="btn-container1">
-              <img src="./assets/technologies/html.png" class="icon"/>
-              <img src="./assets/technologies/sass.png" class="icon"/>
-              <img src="./assets/technologies/js.png" class="icon"/>              
+              <img src="./assets/technologies/html.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/sass.png" alt='css' class="icon"/>
+              <img src="./assets/technologies/js.png" alt='js' class="icon"/>              
             </div>
             <div class="repository">
               <p>Link to the github repository: </p>
               <a href="https://github.com/Alvarosanchezz3/Nike-Card" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="My Github profile" class="icon"/>
+                <img src="./assets/github.png" alt="Github " class="icon"/>
               </a>
             </div>           
           </div>
@@ -279,13 +275,13 @@ function App() {
             </div>
             <h2 class="technologies-sub-title project-title">Animated menu</h2>
             <div class="btn-container1">
-              <img src="./assets/technologies/html.png" class="icon"/>
-              <img src="./assets/technologies/sass.png" class="icon"/>
+              <img src="./assets/technologies/html.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/sass.png" alt='sass' class="icon"/>
             </div>
             <div class="repository">
               <p>Link to the github repository: </p>
               <a href="https://github.com/Alvarosanchezz3/Animated-menu" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="My Github profile" class="icon"/>
+                <img src="./assets/github.png" alt="Github" class="icon"/>
               </a>
             </div> 
           </div>
@@ -333,10 +329,10 @@ function App() {
       </nav>
       <p>This portfolio is made with: </p>     
       <div class="btn-container2">
-        <img src="./assets/technologies/html.png" class="icon"/>
-        <img src="./assets/technologies/css.png" class="icon-css-footer"/>
-        <img src="./assets/technologies/js.png" class="icon"/>
-        <img src="./assets/technologies/react.png" class="icon"/>
+        <img src="./assets/technologies/html.png" alt='html' class="icon"/>
+        <img src="./assets/technologies/css.png" alt='css' class="icon-css-footer"/>
+        <img src="./assets/technologies/js.png" alt='js' class="icon"/>
+        <img src="./assets/technologies/react.png" alt='react' class="icon"/>
       </div>
       <p class="copyright">Copyright &#169; 2023 Álvaro Sánchez. All Rights Reserved.</p>
     </footer>
