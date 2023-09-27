@@ -96,11 +96,11 @@ function App() {
           </button>
         </div>
         <div id="socials-container">
-          <a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-v%C3%A9lez/" target="_blank">
+          <a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-v%C3%A9lez/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" loading="lazy"/>
           </a>
 
-          <a href="https://github.com/Alvarosanchezz3" target="_blank">
+          <a href="https://github.com/Alvarosanchezz3" target="_blank" rel="noopener noreferrer">
             <img src="./assets/github.png" alt="My Github profile" class="icon"/>
           </a>
         </div>
@@ -249,7 +249,7 @@ function App() {
             </div>
             <div class="repository">
               <p>Link to the github repository: </p>
-              <a href="https://github.com/Alvarosanchezz3/NetflixPage" target="_blank">
+              <a href="https://github.com/Alvarosanchezz3/NetflixPage" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="My Github profile" class="icon"/>
               </a>
             </div> 
@@ -267,7 +267,7 @@ function App() {
             </div>
             <div class="repository">
               <p>Link to the github repository: </p>
-              <a href="https://github.com/Alvarosanchezz3/Nike-Card" target="_blank">
+              <a href="https://github.com/Alvarosanchezz3/Nike-Card" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="My Github profile" class="icon"/>
               </a>
             </div>           
@@ -284,7 +284,7 @@ function App() {
             </div>
             <div class="repository">
               <p>Link to the github repository: </p>
-              <a href="https://github.com/Alvarosanchezz3/Animated-menu" target="_blank">
+              <a href="https://github.com/Alvarosanchezz3/Animated-menu" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="My Github profile" class="icon"/>
               </a>
             </div> 
@@ -316,7 +316,7 @@ function App() {
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-v%C3%A9lez/" target="_blank">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-v%C3%A9lez/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         </div>
       </div>
     </section>
