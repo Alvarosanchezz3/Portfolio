@@ -14,6 +14,7 @@ function App() {
   const video1Ref = useRef(null);
   const video2Ref = useRef(null);
   const video3Ref = useRef(null);
+  const video4Ref = useRef(null);
 
   const configureVideoLoop = (videoRef) => {
     if (videoRef.current) {
@@ -271,7 +272,25 @@ function App() {
 
           <div class="details-container color-container">
             <div class="article-container">
-              <video src="./assets/proyects/menu-animado.webm" alt="Project 3" class="project-video" ref={video3Ref} muted/>
+              <video src="./assets/proyects/calculator.mp4" alt="Project 3" class="project-video" ref={video3Ref} muted/>
+            </div>
+            <h2 class="technologies-sub-title project-title">Calculator</h2>
+            <div class="btn-container1">
+              <img src="./assets/technologies/html.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/css.png" alt='css' class="icon-css-footer"/>
+              <img src="./assets/technologies/js.png" alt='js' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/Calculator" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video src="./assets/proyects/menu-animado.webm" alt="Project 4" class="project-video" ref={video4Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Animated menu</h2>
             <div class="btn-container1">
@@ -285,7 +304,6 @@ function App() {
               </a>
             </div> 
           </div>
-
         </div>
       </div>
       <img
