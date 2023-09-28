@@ -253,7 +253,7 @@ function App() {
 
           <div class="details-container color-container">
             <div class="article-container">
-              <video src="./assets/proyects/nikeCard.webm" alt="Project 2" class="project-video" ref={video2Ref} muted/>
+              <video src="./assets/proyects/nikeCard.mp4" alt="Project 2" class="project-video" ref={video2Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Nike card</h2>
             <div class="btn-container1">
