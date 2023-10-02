@@ -212,7 +212,7 @@ function App() {
                 <img src="./assets/technologies/nodeJS.png" alt="technologies icon" class="icon"/>
                 <div>
                   <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <p>Basic</p>
                 </div>
               </article>
               <article>
@@ -299,7 +299,7 @@ function App() {
               <video src="./assets/proyects/menu-animado.webm" alt="Project 4" class="project-video" ref={video4Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Animated menu</h2>
-            <p>Animated menu using hover, before, after in sass type css</p>
+            <p>Animated menu using hover, before, after... Made with HTML and SASS</p>
             <div class="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' class="icon"/>
               <img src="./assets/technologies/sass.png" alt='sass' class="icon"/>
