@@ -245,6 +245,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .btn-container2 {
@@ -258,7 +259,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
 .repository a{
@@ -375,6 +375,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 .article-container {

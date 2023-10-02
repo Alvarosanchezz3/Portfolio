@@ -15,6 +15,7 @@ function App() {
   const video2Ref = useRef(null);
   const video3Ref = useRef(null);
   const video4Ref = useRef(null);
+  const video5Ref = useRef(null);
 
   const configureVideoLoop = (videoRef) => {
     if (videoRef.current) {
@@ -32,6 +33,8 @@ function App() {
     configureVideoLoop(video1Ref);
     configureVideoLoop(video2Ref);
     configureVideoLoop(video3Ref);
+    configureVideoLoop(video4Ref);
+    configureVideoLoop(video5Ref);
   }, []);
 
   // Función para hacer scroll con la flecha
@@ -239,6 +242,7 @@ function App() {
               <video src="./assets/proyects/twd-page.webm" alt="Project 1" class="project-video" ref={video1Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">TWD Netflix page</h2>
+            <p>Responsive section of the walking dead on netflix. Using javascript for video, image changes and menu openings</p>
             <div class="btn-container1">
                 <img src="./assets/technologies/html.png" alt='html' class="icon"/>
                 <img src="./assets/technologies/sass.png" alt='css' class="icon"/>
@@ -257,6 +261,7 @@ function App() {
               <video src="./assets/proyects/nikeCard.mp4" alt="Project 2" class="project-video" ref={video2Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Nike card</h2>
+            <p>Nike letter made using HTML, CSS with animations using Javascript to change the image and colors of it</p>
             <div class="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' class="icon"/>
               <img src="./assets/technologies/sass.png" alt='css' class="icon"/>
@@ -275,6 +280,7 @@ function App() {
               <video src="./assets/proyects/calculator.mp4" alt="Project 3" class="project-video" ref={video3Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Calculator</h2>
+            <p>Calculator made with HTML CSS and JavaScript</p>
             <div class="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' class="icon"/>
               <img src="./assets/technologies/css.png" alt='css' class="icon-css-footer"/>
@@ -293,6 +299,7 @@ function App() {
               <video src="./assets/proyects/menu-animado.webm" alt="Project 4" class="project-video" ref={video4Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Animated menu</h2>
+            <p>Animated menu using hover, before, after in sass type css</p>
             <div class="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' class="icon"/>
               <img src="./assets/technologies/sass.png" alt='sass' class="icon"/>
@@ -304,6 +311,26 @@ function App() {
               </a>
             </div> 
           </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video src="./assets/proyects/WeatherApp.mp4" alt="Project 5" class="project-video" ref={video5Ref} muted/>
+            </div>
+            <h2 class="technologies-sub-title project-title">WeatherApp</h2>
+            <p>Web application that allows users to search for a city and get current weather conditions. Developed using HTML, CSS and JavaScript, it consumes an API to obtain data in real time.</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/html.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/sass.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/js.png" alt='sass' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/WeatherApp" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
         </div>
       </div>
       <img
