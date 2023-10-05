@@ -209,9 +209,9 @@ function App() {
                 </div>
               </article>
               <article>
-                <img src="./assets/technologies/nodeJS.png" alt="technologies icon" class="icon"/>
+                <img src="./assets/technologies/php.png" alt="technologies icon" class="icon"/>
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>PHP</h3>
                   <p>Basic</p>
                 </div>
               </article>
