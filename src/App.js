@@ -260,7 +260,7 @@ function App() {
 
           <div class="details-container color-container">
             <div class="article-container">
-              <video src="./assets/proyects/nikeCard.webm" alt="Project 2" class="project-video" ref={video2Ref} muted/>
+              <video src="./assets/proyects/nikeCard.mp4" alt="Project 2" class="project-video" ref={video2Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Nike card</h2>
             <p>Nike letter made using HTML, CSS with animations using Javascript to change the image and colors of it</p>
@@ -279,7 +279,7 @@ function App() {
 
           <div class="details-container color-container">
             <div class="article-container">
-              <video src="./assets/proyects/calculator.mp4" alt="Project 3" class="project-video" ref={video3Ref} muted/>
+              <video src="./assets/proyects/Calculator.mp4" alt="Project 3" class="project-video" ref={video3Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Calculator</h2>
             <p>Calculator made with HTML CSS and JavaScript</p>
