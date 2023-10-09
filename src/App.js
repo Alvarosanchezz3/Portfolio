@@ -16,6 +16,7 @@ function App() {
   const video3Ref = useRef(null);
   const video4Ref = useRef(null);
   const video5Ref = useRef(null);
+  const video6Ref = useRef(null);
 
   const configureVideoLoop = (videoRef) => {
     if (videoRef.current) {
@@ -35,6 +36,7 @@ function App() {
     configureVideoLoop(video3Ref);
     configureVideoLoop(video4Ref);
     configureVideoLoop(video5Ref);
+    configureVideoLoop(video6Ref);
   }, []);
 
   // Función para hacer scroll con la flecha
@@ -314,7 +316,7 @@ function App() {
 
           <div class="details-container color-container">
             <div class="article-container">
-              <video src="./assets/proyects/WeatherApp.mp4" alt="Project 5" class="project-video" ref={video5Ref} muted/>
+              <video src="./assets/proyects/weatherApp.webm" alt="Project 5" class="project-video" ref={video5Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">WeatherApp</h2>
             <p>Web application that allows users to search for a city and get current weather conditions. Developed using HTML, CSS and JavaScript, it consumes an API to obtain data in real time.</p>
@@ -326,6 +328,25 @@ function App() {
             <div class="repository">
               <p>Link to the github repository: </p>
               <a href="https://github.com/Alvarosanchezz3/WeatherApp" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video src="./assets/proyects/login.webm" alt="Project 6" class="project-video" ref={video6Ref} muted/>
+            </div>
+            <h2 class="technologies-sub-title project-title">Login-Registrer</h2>
+            <p>Login and registration with changing background made with HTML, CSS and JavaScript.</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/html.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/sass.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/js.png" alt='sass' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/Login-Registrer" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" class="icon"/>
               </a>
             </div> 
