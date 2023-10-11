@@ -129,7 +129,7 @@ function App() {
             <div class="details-container">
               <img src="./assets/education.png" alt="Education icon" class="icon"/>
               <h3>Education</h3>
-              <p>Baccalaureate<br />DAM top grade</p>
+              <p>Baccalaureate<br/>DAM top grade<br/>(graduate)</p>
             </div>
           </div>
           <div class="text-container">
