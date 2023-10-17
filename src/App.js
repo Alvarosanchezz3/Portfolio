@@ -368,7 +368,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-            <img src="./assets/proyects/API REST.jpg" alt='img'/>
+            <img src="./assets/proyects/API REST.jpg" alt='img' class="project-img" />
             </div>
             <h2 class="technologies-sub-title project-title">API REST Java</h2>
             <p>Project in Spring Boot that provides a simple REST API to manage customer data in a PostgreSQL database and powered by Docker.</p>
