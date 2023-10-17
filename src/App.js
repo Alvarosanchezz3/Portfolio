@@ -184,6 +184,13 @@ function App() {
                   <p>Basic</p>
                 </div>
               </article>
+              <article>
+                <img src="./assets/technologies/angular.png" alt="technologies icon" class="icon"/>
+                <div>
+                  <h3>Angular</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
           </div>
           <div class="details-container">
@@ -224,6 +231,13 @@ function App() {
                   <p>Basic</p>
                 </div>
               </article>
+              <article>
+                <img src="./assets/technologies/docker.png" alt="technologies icon" class="icon"/>
+                <div>
+                  <h3>Docker</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -237,9 +251,9 @@ function App() {
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="technologies-details-container">
-        <div class="about-containers">
+        <div class="proyect-containers">
 
-          <div class="details-container color-container">
+          <div class="each-proyect">
             <div class="article-container">
               <video src="./assets/proyects/nikeCard.mp4" alt="Project 2" class="project-video" ref={video2Ref} muted/>
             </div>
@@ -258,7 +272,7 @@ function App() {
             </div>           
           </div>
 
-          <div class="details-container color-container">
+          <div class="each-proyect">
             <div class="article-container">
               <video src="./assets/proyects/Calculator.mp4" alt="Project 3" class="project-video" ref={video3Ref} muted/>
             </div>
@@ -277,7 +291,7 @@ function App() {
             </div> 
           </div>
 
-          <div class="details-container color-container">
+          <div class="each-proyect">
             <div class="article-container">
               <video src="./assets/proyects/menu-animado.webm" alt="Project 4" class="project-video" ref={video4Ref} muted/>
             </div>
@@ -295,7 +309,7 @@ function App() {
             </div> 
           </div>
 
-          <div class="details-container color-container">
+          <div class="each-proyect">
             <div class="article-container">
               <video src="./assets/proyects/login.webm" alt="Project 6" class="project-video" ref={video6Ref} muted/>
             </div>
@@ -314,7 +328,7 @@ function App() {
             </div> 
           </div>
 
-          <div class="details-container color-container">
+          <div class="each-proyect">
           <div class="article-container">
               <video src="./assets/proyects/twd-page.mp4" alt="Project 1" class="project-video" ref={video1Ref} muted/>
             </div>
@@ -333,7 +347,7 @@ function App() {
             </div> 
           </div>
 
-          <div class="details-container color-container">
+          <div class="each-proyect">
             <div class="article-container">
               <video src="./assets/proyects/weatherApp.webm" alt="Project 5" class="project-video" ref={video5Ref} muted/>
             </div>
@@ -347,6 +361,26 @@ function App() {
             <div class="repository">
               <p>Link to the github repository: </p>
               <a href="https://github.com/Alvarosanchezz3/WeatherApp" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
+          <div class="each-proyect">
+            <div class="article-container">
+            <img src="./assets/proyects/API REST.jpg" alt='img'/>
+            </div>
+            <h2 class="technologies-sub-title project-title">API REST Java</h2>
+            <p>Project in Spring Boot that provides a simple REST API to manage customer data in a PostgreSQL database and powered by Docker.</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/java.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/spring.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/postgreSQL.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/docker.png" alt='sass' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/SpringBootAPI" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" class="icon"/>
               </a>
             </div> 

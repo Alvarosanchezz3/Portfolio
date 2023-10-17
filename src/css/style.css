@@ -402,11 +402,25 @@ article .icon {
 
 #projects {
   position: relative;
+  display: table;
 }
 
-.color-container {
+.proyect-containers{
+  display: flex;
+  gap: 5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.each-proyect {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  text-align: center;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  flex-basis: 400px;
+  flex-grow: 1;
 }
 
 .project-img {
@@ -414,7 +428,6 @@ article .icon {
   width: 90%;
   height: 90%;
 }
-
 
 .project-video {
   border-radius: 2rem;
