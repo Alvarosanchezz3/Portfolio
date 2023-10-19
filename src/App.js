@@ -102,7 +102,7 @@ function App() {
           </button>
         </div>
         <div id="socials-container">
-          <a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-v%C3%A9lez/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/alvaro-sanchez-velez/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" loading="lazy"/>
           </a>
 
@@ -412,7 +412,7 @@ function App() {
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-v%C3%A9lez/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/alvaro-sanchez-velez/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         </div>
       </div>
     </section>
