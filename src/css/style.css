@@ -253,16 +253,6 @@ section {
   padding: 1rem;
 }
 
-.repository{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.repository a{
-  margin-left: 1rem;
-}
-
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -346,7 +336,6 @@ section {
 }
 
 .section-container {
-  gap: 4rem;
   height: 80%;
 }
 
@@ -356,6 +345,9 @@ section {
   margin: auto 0;
 }
 
+.about-title-containers{
+  margin-bottom: 5px;
+}
 /* Technologies SECTION */
 
 #technologies {
@@ -444,6 +436,16 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.repository{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repository a{
+  margin-left: 10px;
 }
 
 /* CONTACT */

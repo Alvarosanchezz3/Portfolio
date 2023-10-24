@@ -122,14 +122,19 @@ function App() {
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img src="./assets/technologies.png" alt="technologies icon" class="icon"/>
-              <h3>Licenses and certifications</h3>
-              <p>HTML and CSS intensive - path to REACT<br/>B1 English Certificate Cambridge<br/>B2 English Certificate EF SET </p>
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3 class="about-title-containers">Education</h3>
+              <p>Baccalaureate<br/>DAM graduate</p>
             </div>
             <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon"/>
-              <h3>Education</h3>
-              <p>Baccalaureate<br/>DAM top grade<br/>(graduate)</p>
+              <img src="./assets/certification.png" alt="technologies icon" class="icon"/>
+              <h3 class="about-title-containers">Licenses and certifications</h3>
+              <p>B1 English Certificate Cambridge<br/>B2 English Certificate EF SET </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/course.png" alt="technologies icon" class="icon"/>
+              <h3 class="about-title-containers">Courses</h3>
+              <p>HTML and CSS - path to REACT<br/>Java Master with Spring and Angular (+127h)</p>
             </div>
           </div>
           <div class="text-container">
@@ -370,7 +375,7 @@ function App() {
             <div class="article-container">
             <img src="./assets/proyects/API REST.jpg" alt='img' class="project-img" />
             </div>
-            <h2 class="technologies-sub-title project-title">API REST Java</h2>
+            <h2 class="technologies-sub-title project-title">API REST - Java</h2>
             <p>Project in Spring Boot that provides a simple REST API to manage customer data in a PostgreSQL database and powered by Docker.</p>
             <div class="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' class="icon"/>
@@ -381,6 +386,24 @@ function App() {
             <div class="repository">
               <p>Link to the github repository: </p>
               <a href="https://github.com/Alvarosanchezz3/SpringBootAPI" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
+          <div class="each-proyect">
+            <div class="article-container">
+            <img src="./assets/proyects/ID-Spring.jpg" alt='img' class="project-img" />
+            </div>
+            <h2 class="technologies-sub-title project-title">Dependency injection</h2>
+            <p>Spring project developed to learn the different forms of dependency injection for code reuse, refactoring and easier testing</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/java.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/spring.png" alt='sass' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/SpringBootDI" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" class="icon"/>
               </a>
             </div> 
