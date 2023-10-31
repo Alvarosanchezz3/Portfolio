@@ -373,6 +373,24 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
+              <video src="./assets/proyects/PokemonParejas.mp4" alt="Project 5" class="project-video" ref={video5Ref} muted/>
+            </div>
+            <h2 class="technologies-sub-title project-title">Pokemon-CouplesGame</h2>
+            <p>Pokemon-themed match-finding game, made in Java using the java swing library for the graphical interface. They appear randomly in each game</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/java.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/eclipse.png" alt='html' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/Pokemon-CouplesGame" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
+          <div class="each-proyect">
+            <div class="article-container">
             <img src="./assets/proyects/API REST.jpg" alt='img' class="project-img" />
             </div>
             <h2 class="technologies-sub-title project-title">API REST - Java</h2>
@@ -408,6 +426,27 @@ function App() {
               </a>
             </div> 
           </div>
+
+          <div class="each-proyect">
+            <div class="article-container">
+            <img src="./assets/proyects/Forms.png" alt='img' class="project-img" />
+            </div>
+            <h2 class="technologies-sub-title project-title">Spring forms</h2>
+            <p>Implemented form validation with Spring Framework, leveraging Thymeleaf and Bootstrap to create dynamic and aesthetic web content.</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/java.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/spring.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/html.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/bootstrap.png" alt='sass' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/SpringBoot-Form" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
 
         </div>
       </div>
