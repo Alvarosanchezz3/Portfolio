@@ -1,6 +1,6 @@
 # Álvaro Sánchez-Vélez - Portafolio 🚀
 
-¡Hola! 👋 Soy Álvaro, un apasionado desarrollador Full Stack Junior con sede en España. Este es mi espacio digital donde comparto mi trayectoria educativa, proyectos de programación y cómo puedes ponerte en contacto conmigo.
+¡Hola! 👋 Soy un apasionado desarrollador Full Stack Junior con sede en España. Este es mi espacio digital donde comparto mi trayectoria educativa, proyectos de programación y cómo puedes ponerte en contacto conmigo.
 
 ## Sobre mí 👨‍💻
 - Soy un desarrollador Full Stack y estoy constantemente aprendiendo cada día para mejorar mis habilidades y mantenerme al tanto de las últimas tendencias en tecnología. Mi pasión por la programación me impulsa a explorar y crear soluciones innovadoras.
