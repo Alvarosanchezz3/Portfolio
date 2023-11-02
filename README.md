@@ -16,11 +16,10 @@
 ## Lenguajes y Herramientas 🔨
 - HTML, CSS, Sass
 - JavaScript
-- React, Angular
 - Java
+- Spring
+- React, Angular
 - SQL
 - Git
-- PHP
-- Spring
 
 Si tienes alguna pregunta, sugerencia o simplemente deseas conectarte, no dudes en enviarme un mensaje. ¡Espero que disfrutes explorando mi portafolio! 🚀
