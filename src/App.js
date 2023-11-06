@@ -162,7 +162,7 @@ function App() {
                 </div>
               </article>
               <article>
-                <img src="./assets/technologies/css.png" alt="technologies icon" class="icon-css"/>
+                <img src="./assets/technologies/css.png" alt="technologies icon" class="icon"/>
                 <div>
                   <h3>CSS</h3>
                   <p>Advanced</p>
@@ -418,6 +418,8 @@ function App() {
             <div class="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' class="icon"/>
               <img src="./assets/technologies/spring.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/html.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/css.png" alt='sass' class="icon"/>
             </div>
             <div class="repository">
               <p>Link to the github repository: </p>
@@ -447,6 +449,45 @@ function App() {
             </div> 
           </div>
 
+          <div class="each-proyect">
+            <div class="article-container">
+            <img src="./assets/proyects/Interceptores.png" alt='img' class="project-img" />
+            </div>
+            <h2 class="technologies-sub-title project-title">Spring Interceptors</h2>
+            <p>Simple project in Spring that uses an interceptor to display a welcome message to users accessing the application during customer service hours and redirects to a closing page outside of customer service hours.</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/java.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/spring.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/html.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/css.png" alt='sass' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/SpringBoot-Horario" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
+
+          <div class="each-proyect">
+            <div class="article-container">
+            <img src="./assets/proyects/errores.png" alt='img' class="project-img" />
+            </div>
+            <h2 class="technologies-sub-title project-title">Error handling in Spring</h2>
+            <p>This project demonstrates how to handle errors in an application based on the Spring framework. The project includes a handler, services, and custom exceptions to show how different types of errors can be handled.</p>
+            <div class="btn-container1">
+              <img src="./assets/technologies/java.png" alt='html' class="icon"/>
+              <img src="./assets/technologies/spring.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/html.png" alt='sass' class="icon"/>
+              <img src="./assets/technologies/css.png" alt='sass' class="icon"/>
+            </div>
+            <div class="repository">
+              <p>Link to the github repository: </p>
+              <a href="https://github.com/Alvarosanchezz3/SpringBoot-Errors" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" class="icon"/>
+              </a>
+            </div> 
+          </div>
 
         </div>
       </div>
