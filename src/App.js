@@ -260,7 +260,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-              <video src="./assets/proyects/nikeCard.mp4" alt="Project 2" class="project-video" ref={video2Ref} muted/>
+              <video src="./assets/projects/nikeCard.mp4" alt="Project 2" class="project-video" ref={video2Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Nike card</h2>
             <p>Nike letter made using HTML, CSS with animations using Javascript to change the image and colors of it</p>
@@ -279,7 +279,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-              <video src="./assets/proyects/Calculator.mp4" alt="Project 3" class="project-video" ref={video3Ref} muted/>
+              <video src="./assets/projects/Calculator.mp4" alt="Project 3" class="project-video" ref={video3Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Calculator</h2>
             <p>Calculator made with HTML CSS and JavaScript</p>
@@ -298,7 +298,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-              <video src="./assets/proyects/menu-animado.webm" alt="Project 4" class="project-video" ref={video4Ref} muted/>
+              <video src="./assets/projects/menu-animado.webm" alt="Project 4" class="project-video" ref={video4Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Animated menu</h2>
             <p>Animated menu using hover, before, after... Made with HTML and SASS</p>
@@ -316,7 +316,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-              <video src="./assets/proyects/login.webm" alt="Project 6" class="project-video" ref={video6Ref} muted/>
+              <video src="./assets/projects/login.webm" alt="Project 6" class="project-video" ref={video6Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Login-Registrer</h2>
             <p>Login and registration with changing background made with HTML, CSS and JavaScript.</p>
@@ -335,7 +335,7 @@ function App() {
 
           <div class="each-proyect">
           <div class="article-container">
-              <video src="./assets/proyects/twd-page.mp4" alt="Project 1" class="project-video" ref={video1Ref} muted/>
+              <video src="./assets/projects/twd-page.mp4" alt="Project 1" class="project-video" ref={video1Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">TWD Netflix page</h2>
             <p>Responsive section of the Walking Dead on Netflix. Using media queries for response and javascript for videos, image changes and menu openings</p>
@@ -354,7 +354,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-              <video src="./assets/proyects/weatherApp.webm" alt="Project 5" class="project-video" ref={video5Ref} muted/>
+              <video src="./assets/projects/weatherApp.webm" alt="Project 5" class="project-video" ref={video5Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">WeatherApp</h2>
             <p>Web application that allows users to search for a city and get current weather conditions. Developed using HTML, CSS and JavaScript, it consumes an API to obtain data in real time.</p>
@@ -373,7 +373,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-              <video src="./assets/proyects/PokemonParejas.mp4" alt="Project 5" class="project-video" ref={video5Ref} muted/>
+              <video src="./assets/projects/PokemonParejas.mp4" alt="Project 5" class="project-video" ref={video5Ref} muted/>
             </div>
             <h2 class="technologies-sub-title project-title">Pokemon-CouplesGame</h2>
             <p>Pokemon-themed match-finding game, made in Java using the java swing library for the graphical interface. They appear randomly in each game</p>
@@ -391,7 +391,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-            <img src="./assets/proyects/API REST.jpg" alt='img' class="project-img" />
+            <img src="./assets/projects/API REST.jpg" alt='img' class="project-img" />
             </div>
             <h2 class="technologies-sub-title project-title">API REST - Java</h2>
             <p>Project in Spring Boot that provides a simple REST API to manage customer data in a PostgreSQL database and powered by Docker.</p>
@@ -411,7 +411,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-            <img src="./assets/proyects/ID-Spring.jpg" alt='img' class="project-img" />
+            <img src="./assets/projects/ID-Spring.jpg" alt='img' class="project-img" />
             </div>
             <h2 class="technologies-sub-title project-title">Dependency injection</h2>
             <p>Spring project developed to learn the different forms of dependency injection for code reuse, refactoring and easier testing</p>
@@ -431,7 +431,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-            <img src="./assets/proyects/Forms.png" alt='img' class="project-img" />
+            <img src="./assets/projects/Forms.png" alt='img' class="project-img" />
             </div>
             <h2 class="technologies-sub-title project-title">Spring forms</h2>
             <p>Implemented form validation with Spring Framework, leveraging Thymeleaf and Bootstrap to create dynamic and aesthetic web content.</p>
@@ -451,7 +451,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-            <img src="./assets/proyects/Interceptores.png" alt='img' class="project-img" />
+            <img src="./assets/projects/Interceptores.png" alt='img' class="project-img" />
             </div>
             <h2 class="technologies-sub-title project-title">Spring Interceptors</h2>
             <p>Simple project in Spring that uses an interceptor to display a welcome message to users accessing the application during customer service hours and redirects to a closing page outside of customer service hours.</p>
@@ -471,7 +471,7 @@ function App() {
 
           <div class="each-proyect">
             <div class="article-container">
-            <img src="./assets/proyects/errores.png" alt='img' class="project-img" />
+            <img src="./assets/projects/errores.png" alt='img' class="project-img" />
             </div>
             <h2 class="technologies-sub-title project-title">Error handling in Spring</h2>
             <p>This project demonstrates how to handle errors in an application based on the Spring framework. The project includes a handler, services, and custom exceptions to show how different types of errors can be handled.</p>
