@@ -397,14 +397,14 @@ article .icon {
   display: table;
 }
 
-.proyect-containers{
+.project-containers{
   display: flex;
   gap: 5rem;
   margin-top: 3rem;
   flex-wrap: wrap;
 }
 
-.each-proyect {
+.each-project {
   padding: 2rem;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;

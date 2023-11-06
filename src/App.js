@@ -256,9 +256,9 @@ function App() {
       <p className="section__text__p1">Browse My Recent</p>
       <h1 className="title">Projects</h1>
       <div className="technologies-details-container">
-        <div className="proyect-containers">
+        <div className="project-containers">
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
               <video src="./assets/projects/nikeCard.mp4" alt="Project 2" className="project-video" ref={video2Ref} muted/>
             </div>
@@ -277,7 +277,7 @@ function App() {
             </div>           
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
               <video src="./assets/projects/Calculator.mp4" alt="Project 3" className="project-video" ref={video3Ref} muted/>
             </div>
@@ -296,7 +296,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
               <video src="./assets/projects/menu-animado.webm" alt="Project 4" className="project-video" ref={video4Ref} muted/>
             </div>
@@ -314,7 +314,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
               <video src="./assets/projects/login.webm" alt="Project 6" className="project-video" ref={video6Ref} muted/>
             </div>
@@ -333,7 +333,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
           <div className="article-container">
               <video src="./assets/projects/twd-page.mp4" alt="Project 1" className="project-video" ref={video1Ref} muted/>
             </div>
@@ -352,7 +352,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
               <video src="./assets/projects/weatherApp.webm" alt="Project 5" className="project-video" ref={video5Ref} muted/>
             </div>
@@ -371,7 +371,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
               <video src="./assets/projects/PokemonParejas.mp4" alt="Project 5" className="project-video" ref={video5Ref} muted/>
             </div>
@@ -389,7 +389,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
             <img src="./assets/projects/API REST.jpg" alt='img' className="project-img" />
             </div>
@@ -409,7 +409,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
             <img src="./assets/projects/ID-Spring.jpg" alt='img' className="project-img" />
             </div>
@@ -429,7 +429,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
             <img src="./assets/projects/Forms.png" alt='img' className="project-img" />
             </div>
@@ -449,7 +449,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
             <img src="./assets/projects/Interceptores.png" alt='img' className="project-img" />
             </div>
@@ -469,7 +469,7 @@ function App() {
             </div> 
           </div>
 
-          <div className="each-proyect">
+          <div className="each-project">
             <div className="article-container">
             <img src="./assets/projects/errores.png" alt='img' className="project-img" />
             </div>
