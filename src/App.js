@@ -335,7 +335,7 @@ function App() {
 
           <div className="each-project">
           <div className="article-container">
-              <video src="./assets/projects/twd-page.mp4" alt="Project 1" className="project-video" ref={video1Ref} muted/>
+              <video src="./assets/projects/TWD-Netflix.mp4" alt="Project 1" className="project-video" ref={video1Ref} muted/>
             </div>
             <h2 className="technologies-sub-title project-title">TWD Netflix page</h2>
             <p>Responsive section of the Walking Dead on Netflix. Using media queries for response and javascript for videos, image changes and menu openings</p>
@@ -373,7 +373,7 @@ function App() {
 
           <div className="each-project">
             <div className="article-container">
-              <video src="./assets/projects/PokemonParejas.mp4" alt="Project 5" className="project-video" ref={video5Ref} muted/>
+              <video src="./assets/projects/PokemonParejas.mp4" alt="Project 5" className="project-video" ref={video6Ref} muted/>
             </div>
             <h2 className="technologies-sub-title project-title">Pokemon-CouplesGame</h2>
             <p>Pokemon-themed match-finding game, made in Java using the java swing library for the graphical interface. They appear randomly in each game</p>
