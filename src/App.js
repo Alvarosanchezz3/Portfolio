@@ -40,7 +40,7 @@ function App() {
 
   useEffect(() => {
     videoRefs.forEach(configureVideoLoop);
-  }, []);
+  });
 
   // Función para hacer scroll con la flecha
   function redirect(fragment) {
@@ -74,32 +74,16 @@ function App() {
         <body>
           <nav id="desktop-nav">
             <div className="logo">Álvaro Sánchez</div>
-            <div>
+            <div className='nav-list'>
               <ul className="nav-links">
                 <li><a href="#about">{translations.about}</a></li>
                 <li><a href="#technologies">{translations.tecns}</a></li>
                 <li><a href="#projects">{translations.projects}</a></li>
-                <li><a href="#contact">{translations.contact}</a></li>
-                <Translations onLanguageChange={handleLanguageChange} />
+                <li><a href="#contact">{translations.contact}</a></li>           
               </ul>
+              <Translations onLanguageChange={handleLanguageChange}/>
             </div>
           </nav>
-    <nav id="hamburger-nav"> 
-      <div className="logo">Álvaro Sánchez</div>
-      <div className="hamburger-menu">
-        <div className="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className="menu-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#technologies">technologies</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </div>
-      </div>
-    </nav>
     <section id="profile">
       <div className="section__pic-container1">     
           <Lottie animationData={animationPerson}/>

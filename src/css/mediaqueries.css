@@ -14,12 +14,15 @@
 
 @media screen and (max-width: 1300px) {
   
-  #desktop-nav {
+  .nav-links {
     display: none;
   }
-  #hamburger-nav {
-    display: flex;
+
+  .flag-button{
+    display: block;
+    margin-left: 0;
   }
+ 
   #profile,
   .section-container {
     display: block;
