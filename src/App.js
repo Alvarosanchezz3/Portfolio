@@ -7,9 +7,14 @@ import Lottie from 'lottie-react';
 import animationPerson from './lotties/animation_person.json';
 import animationWorking from './lotties/animation_working.json';
 
+import translationsES  from './translations/ES'; // Importa las traducciones en español
+import translationsEN from './translations/EN'; // Importa las traducciones en inglés
+
+import Translations  from './translations/Translations.js';
+
 function App() {
   
-  // Función para configurar un video para reproducción en bucle
+  // Constantes y función para reproducir en bucle los videos
   
   const video1Ref = useRef(null);
   const video2Ref = useRef(null);
@@ -17,6 +22,9 @@ function App() {
   const video4Ref = useRef(null);
   const video5Ref = useRef(null);
   const video6Ref = useRef(null);
+  const video7Ref = useRef(null);
+
+  const videoRefs = [video1Ref, video2Ref, video3Ref, video4Ref, video5Ref, video6Ref, video7Ref];
 
   const configureVideoLoop = (videoRef) => {
     if (videoRef.current) {
@@ -31,12 +39,7 @@ function App() {
   };
 
   useEffect(() => {
-    configureVideoLoop(video1Ref);
-    configureVideoLoop(video2Ref);
-    configureVideoLoop(video3Ref);
-    configureVideoLoop(video4Ref);
-    configureVideoLoop(video5Ref);
-    configureVideoLoop(video6Ref);
+    videoRefs.forEach(configureVideoLoop);
   }, []);
 
   // Función para hacer scroll con la flecha
@@ -44,31 +47,44 @@ function App() {
     window.location.href = `/#${fragment}`;
   }
 
-  //Función para abrir el pdf del CV
+  // Función para abrir el pdf del CV
   function openPDF () {
     window.open('./assets/CV Álvaro Sánchez Vélez.pdf');
   }
 
+  // Traducción usando el componente Translations.js y los archivos de las traducciones ES.js y EN.js
+
+  const [currentLanguage, setCurrentLanguage] = React.useState('en'); // Estado para el idioma actual
+
+  // Función para cambiar el idioma
+  const handleLanguageChange = () => {
+    setCurrentLanguage(currentLanguage === 'en' ? 'es' : 'en');
+  };
+
+  // Utiliza el conjunto de traducciones según el idioma actual
+  const translations = currentLanguage === 'en' ? translationsEN : translationsES;
+
   return (
-    
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div className="logo">Álvaro Sánchez</div>
-      <div>
-        <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#technologies">Technologies</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
+
+<html lang={currentLanguage}>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Álvaro Sánchez Vélez</title>
+        </head>
+        <body>
+          <nav id="desktop-nav">
+            <div className="logo">Álvaro Sánchez</div>
+            <div>
+              <ul className="nav-links">
+                <li><a href="#about">{translations.about}</a></li>
+                <li><a href="#technologies">{translations.tecns}</a></li>
+                <li><a href="#projects">{translations.projects}</a></li>
+                <li><a href="#contact">{translations.contact}</a></li>
+                <Translations onLanguageChange={handleLanguageChange} />
+              </ul>
+            </div>
+          </nav>
+    <nav id="hamburger-nav"> 
       <div className="logo">Álvaro Sánchez</div>
       <div className="hamburger-menu">
         <div className="hamburger-icon">
@@ -89,16 +105,16 @@ function App() {
           <Lottie animationData={animationPerson}/>
       </div>
       <div className="section__text">
-        <p className="section__text__p1">Hello👋🏼, I'm</p>
+        <p className="section__text__p1">{translations.saludo}</p>
         <h1 className="title">Álvaro Sánchez</h1>
-        <p className="section__text__p2">Junior Developer</p>
+        <p className="section__text__p2">{translations.trabajo}</p>
         <div className="btn-container1">
           <button
             className="btn btn-color-2"
-            onClick={openPDF}>Download CV
+            onClick={openPDF}>{translations.CV}
           </button>
           <button className="btn btn-color-1" onClick={() => redirect('contact')}>
-            Contact me
+          {translations['contact-me']}
           </button>
         </div>
         <div id="socials-container">
@@ -113,8 +129,8 @@ function App() {
       </div>
     </section>
     <section id="about">
-      <p className="section__text__p1">Get To Know More</p>
-      <h1 className="title">About Me</h1>
+      <p className="section__text__p1">{translations.KnowMore}</p>
+      <h1 className="title">{translations.about}</h1>
       <div className="section-container">
         <div className="section__pic-container2">
         <Lottie animationData={animationWorking}/>
@@ -123,23 +139,26 @@ function App() {
           <div className="about-containers">
             <div className="details-container">
               <img src="./assets/education.png" alt="Education icon" className="icon"/>
-              <h3 className="about-title-containers">Education</h3>
-              <p>Baccalaureate<br/>DAM graduate</p>
+              <h3 className="about-title-containers">{translations.education}</h3>
+              <p>{translations.bacc}</p>
+              <p>{translations.dam}</p>
             </div>
             <div className="details-container">
               <img src="./assets/certification.png" alt="technologies icon" className="icon"/>
-              <h3 className="about-title-containers">Licenses and certifications</h3>
-              <p>B1 English Certificate Cambridge<br/>B2 English Certificate EF SET </p>
+              <h3 className="about-title-containers">{translations['lic-certif']}</h3>
+              <p>{translations.cambridge}</p>
+              <p>{translations.efSet}</p>
             </div>
             <div className="details-container">
               <img src="./assets/course.png" alt="technologies icon" className="icon"/>
-              <h3 className="about-title-containers">Courses</h3>
-              <p>HTML and CSS - path to REACT<br/>Java Master with Spring and Angular (+127h)</p>
+              <h3 className="about-title-containers">{translations.courses}</h3>
+              <p>{translations.course1}</p>
+              <p>{translations.course2}</p>
             </div>
           </div>
           <div className="text-container">
             <p>
-            20 year old man passionate about programming and the technological world with the desire to contribute in his first work environment, continue learning languages, frameworks and improving every day. I consider myself a fairly persevering, ambitious and committed person to give my best and improve every day.
+            {translations['cover-letter']}
             </p>
           </div>
         </div>
@@ -147,53 +166,53 @@ function App() {
       <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => redirect('technologies')}/>
     </section>
     <section id="technologies">
-      <p className="section__text__p1">Explore My</p>
-      <h1 className="title">Technologies</h1>
+      <p className="section__text__p1">{translations['explore-my']}</p>
+      <h1 className="title">{translations.tecns}</h1>
       <div className="technologies-details-container">
         <div className="about-containers">
           <div className="details-container">
-            <h2 className="technologies-sub-title">Frontend Development</h2>
+            <h2 className="technologies-sub-title">{translations.frontdev}</h2>
             <div className="article-container">
               <article>
                 <img src="./assets/technologies/html.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>HTML</h3>
-                  <p>Advanced</p>
+                  <p>{translations.adv}</p>
                 </div>
               </article>
               <article>
                 <img src="./assets/technologies/css.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>CSS</h3>
-                  <p>Advanced</p>
+                  <p>{translations.adv}</p>
                 </div>
               </article>
               <article>
                 <img src="./assets/technologies/sass.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>SASS</h3>
-                  <p>Advanced</p>
+                  <p>{translations.adv}</p>
                 </div>
               </article>
               <article>
                 <img src="./assets/technologies/js.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Intermediate</p>
+                  <p>{translations.int}</p>
                 </div>
               </article>
               <article>
                 <img src="./assets/technologies/react.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>React</h3>
-                  <p>Basic</p>
+                  <p>{translations.bas}</p>
                 </div>
               </article>
               <article>
                 <img src="./assets/technologies/angular.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>Angular</h3>
-                  <p>Basic</p>
+                  <p>{translations.bas}</p>
                 </div>
               </article>
             </div>
@@ -201,46 +220,46 @@ function App() {
           <div className="details-container">
             <h2 className="technologies-sub-title">Backend Development</h2>
             <div className="article-container">
-            <article>
+              <article>
                 <img src="./assets/technologies/java.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>Java</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/technologies/postgreSQL.png" alt="technologies icon" className="icon"/>
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/technologies/git.png" alt="technologies icon" className="icon"/>
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/technologies/php.png" alt="technologies icon" className="icon"/>
-                <div>
-                  <h3>PHP</h3>
-                  <p>Basic</p>
+                  <p>{translations.adv}</p>
                 </div>
               </article>
               <article>
                 <img src="./assets/technologies/spring.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>Spring</h3>
-                  <p>Basic</p>
+                  <p>{translations.adv}</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/technologies/postgreSQL.png" alt="technologies icon" className="icon"/>
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>{translations.adv}</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/technologies/git.png" alt="technologies icon" className="icon"/>
+                <div>
+                  <h3>Git</h3>
+                  <p>{translations.adv}</p>
                 </div>
               </article>
               <article>
                 <img src="./assets/technologies/docker.png" alt="technologies icon" className="icon"/>
                 <div>
                   <h3>Docker</h3>
-                  <p>Basic</p>
+                  <p>{translations.bas}</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/technologies/php.png" alt="technologies icon" className="icon"/>
+                <div>
+                  <h3>PHP</h3>
+                  <p>{translations.bas}</p>
                 </div>
               </article>
             </div>
@@ -253,24 +272,24 @@ function App() {
       onClick={() => redirect('projects')}/>
     </section>
     <section id="projects">
-      <p className="section__text__p1">Browse My Recent</p>
-      <h1 className="title">Projects</h1>
+      <p className="section__text__p1">{translations['explore-my']}</p>
+      <h1 className="title">{translations.projects}</h1>
       <div className="technologies-details-container">
         <div className="project-containers">
 
           <div className="each-project">
             <div className="article-container">
-              <video src="./assets/projects/nikeCard.mp4" alt="Project 2" className="project-video" ref={video2Ref} muted/>
+              <video src="./assets/projects/nikeCard.mp4" alt="Project 1" className="project-video" ref={video1Ref} muted/>
             </div>
-            <h2 className="technologies-sub-title project-title">Nike card</h2>
-            <p>Nike letter made using HTML, CSS with animations using Javascript to change the image and colors of it</p>
+            <h2 className="technologies-sub-title project-title">{translations.nike}</h2>
+            <p>{translations['nike-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' className="icon"/>
               <img src="./assets/technologies/sass.png" alt='css' className="icon"/>
               <img src="./assets/technologies/js.png" alt='js' className="icon"/>              
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/Nike-Card" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github " className="icon"/>
               </a>
@@ -279,17 +298,17 @@ function App() {
 
           <div className="each-project">
             <div className="article-container">
-              <video src="./assets/projects/Calculator.mp4" alt="Project 3" className="project-video" ref={video3Ref} muted/>
+              <video src="./assets/projects/Calculator.mp4" alt="Project 2" className="project-video" ref={video2Ref} muted/>
             </div>
-            <h2 className="technologies-sub-title project-title">Calculator</h2>
-            <p>Calculator made with HTML CSS and JavaScript</p>
+            <h2 className="technologies-sub-title project-title">{translations.calculator}</h2>
+            <p>{translations['calculator-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' className="icon"/>
               <img src="./assets/technologies/css.png" alt='css' className="icon-css-footer"/>
               <img src="./assets/technologies/js.png" alt='js' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/Calculator" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -298,16 +317,16 @@ function App() {
 
           <div className="each-project">
             <div className="article-container">
-              <video src="./assets/projects/menu-animado.webm" alt="Project 4" className="project-video" ref={video4Ref} muted/>
+              <video src="./assets/projects/menu-animado.webm" alt="Project 3" className="project-video" ref={video3Ref} muted/>
             </div>
-            <h2 className="technologies-sub-title project-title">Animated menu</h2>
-            <p>Animated menu using hover, before, after... Made with HTML and SASS</p>
+            <h2 className="technologies-sub-title project-title">{translations['animated-menu']}</h2>
+            <p>{translations['animated-menu-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' className="icon"/>
               <img src="./assets/technologies/sass.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/Animated-menu" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -316,17 +335,17 @@ function App() {
 
           <div className="each-project">
             <div className="article-container">
-              <video src="./assets/projects/login.webm" alt="Project 6" className="project-video" ref={video6Ref} muted/>
+              <video src="./assets/projects/login.webm" alt="Project 4" className="project-video" ref={video4Ref} muted/>
             </div>
-            <h2 className="technologies-sub-title project-title">Login-Registrer</h2>
-            <p>Login and registration with changing background made with HTML, CSS and JavaScript.</p>
+            <h2 className="technologies-sub-title project-title">{translations['login-register']}</h2>
+            <p>{translations['login-register-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' className="icon"/>
               <img src="./assets/technologies/sass.png" alt='sass' className="icon"/>
               <img src="./assets/technologies/js.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/Login-Registrer" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -335,17 +354,17 @@ function App() {
 
           <div className="each-project">
           <div className="article-container">
-              <video src="./assets/projects/TWD-Netflix.mp4" alt="Project 1" className="project-video" ref={video1Ref} muted/>
+              <video src="./assets/projects/TWD-Netflix.mp4" alt="Project 5" className="project-video" ref={video5Ref} muted/>
             </div>
-            <h2 className="technologies-sub-title project-title">TWD Netflix page</h2>
-            <p>Responsive section of the Walking Dead on Netflix. Using media queries for response and javascript for videos, image changes and menu openings</p>
+            <h2 className="technologies-sub-title project-title">{translations['twd-netflix-page']}</h2>
+            <p>{translations['twd-netflix-page-desc']}</p>
             <div className="btn-container1">
                 <img src="./assets/technologies/html.png" alt='html' className="icon"/>
                 <img src="./assets/technologies/sass.png" alt='css' className="icon"/>
                 <img src="./assets/technologies/js.png" alt='js' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/NetflixPage" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -354,17 +373,17 @@ function App() {
 
           <div className="each-project">
             <div className="article-container">
-              <video src="./assets/projects/weatherApp.webm" alt="Project 5" className="project-video" ref={video5Ref} muted/>
+              <video src="./assets/projects/weatherApp.webm" alt="Project 6" className="project-video" ref={video6Ref} muted/>
             </div>
-            <h2 className="technologies-sub-title project-title">WeatherApp</h2>
-            <p>Web application that allows users to search for a city and get current weather conditions. Developed using HTML, CSS and JavaScript, it consumes an API to obtain data in real time.</p>
+            <h2 className="technologies-sub-title project-title">{translations.weatherApp}</h2>
+            <p>{translations['weatherApp-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/html.png" alt='html' className="icon"/>
               <img src="./assets/technologies/sass.png" alt='sass' className="icon"/>
               <img src="./assets/technologies/js.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/WeatherApp" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -373,16 +392,16 @@ function App() {
 
           <div className="each-project">
             <div className="article-container">
-              <video src="./assets/projects/PokemonParejas.mp4" alt="Project 5" className="project-video" ref={video6Ref} muted/>
+              <video src="./assets/projects/PokemonParejas.mp4" alt="Project 7" className="project-video" ref={video7Ref} muted/>
             </div>
-            <h2 className="technologies-sub-title project-title">Pokemon-CouplesGame</h2>
-            <p>Pokemon-themed match-finding game, made in Java using the java swing library for the graphical interface. They appear randomly in each game</p>
+            <h2 className="technologies-sub-title project-title">{translations.pokemon}</h2>
+            <p>{translations['pokemon-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' className="icon"/>
               <img src="./assets/technologies/eclipse.png" alt='html' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/Pokemon-CouplesGame" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -394,7 +413,7 @@ function App() {
             <img src="./assets/projects/API REST.jpg" alt='img' className="project-img" />
             </div>
             <h2 className="technologies-sub-title project-title">API REST - Java</h2>
-            <p>Project in Spring Boot that provides a simple REST API to manage customer data in a PostgreSQL database and powered by Docker.</p>
+            <p>{translations['api-rest-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' className="icon"/>
               <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
@@ -402,7 +421,7 @@ function App() {
               <img src="./assets/technologies/docker.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/SpringBootAPI" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -413,8 +432,8 @@ function App() {
             <div className="article-container">
             <img src="./assets/projects/ID-Spring.jpg" alt='img' className="project-img" />
             </div>
-            <h2 className="technologies-sub-title project-title">Dependency injection</h2>
-            <p>Spring project developed to learn the different forms of dependency injection for code reuse, refactoring and easier testing</p>
+            <h2 className="technologies-sub-title project-title">{translations['dep-iny']}</h2>
+            <p>{translations['dep-iny-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' className="icon"/>
               <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
@@ -422,7 +441,7 @@ function App() {
               <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/SpringBootDI" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -433,8 +452,8 @@ function App() {
             <div className="article-container">
             <img src="./assets/projects/Forms.png" alt='img' className="project-img" />
             </div>
-            <h2 className="technologies-sub-title project-title">Spring forms</h2>
-            <p>Implemented form validation with Spring Framework, leveraging Thymeleaf and Bootstrap to create dynamic and aesthetic web content.</p>
+            <h2 className="technologies-sub-title project-title">{translations['spring-forms']}</h2>
+            <p>{translations['spring-forms-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' className="icon"/>
               <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
@@ -442,7 +461,7 @@ function App() {
               <img src="./assets/technologies/bootstrap.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/SpringBoot-Form" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -453,8 +472,8 @@ function App() {
             <div className="article-container">
             <img src="./assets/projects/Interceptores.png" alt='img' className="project-img" />
             </div>
-            <h2 className="technologies-sub-title project-title">Spring Interceptors</h2>
-            <p>Simple project in Spring that uses an interceptor to display a welcome message to users accessing the application during customer service hours and redirects to a closing page outside of customer service hours.</p>
+            <h2 className="technologies-sub-title project-title">{translations.interceps}</h2>
+            <p>{translations['interceps-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' className="icon"/>
               <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
@@ -462,7 +481,7 @@ function App() {
               <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/SpringBoot-Horario" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -473,8 +492,8 @@ function App() {
             <div className="article-container">
             <img src="./assets/projects/errores.png" alt='img' className="project-img" />
             </div>
-            <h2 className="technologies-sub-title project-title">Error handling in Spring</h2>
-            <p>This project demonstrates how to handle errors in an application based on the Spring framework. The project includes a handler, services, and custom exceptions to show how different types of errors can be handled.</p>
+            <h2 className="technologies-sub-title project-title">{translations['errors-handling']}</h2>
+            <p>{translations['errors-handling-desc']}</p>
             <div className="btn-container1">
               <img src="./assets/technologies/java.png" alt='html' className="icon"/>
               <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
@@ -482,7 +501,7 @@ function App() {
               <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
             </div>
             <div className="repository">
-              <p>Link to the github repository: </p>
+              <p>{translations.github}</p>
               <a href="https://github.com/Alvarosanchezz3/SpringBoot-Errors" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/github.png" alt="Github" className="icon"/>
               </a>
@@ -498,8 +517,8 @@ function App() {
         onClick={() => redirect('contact')}/>
     </section>
     <section id="contact">
-      <p className="section__text__p1">Get in Touch</p>
-      <h1 className="title">Contact Me</h1>
+      <p className="section__text__p1">{translations.getTouch}</p>
+      <h1 className="title">{translations['contact-me']}</h1>
       <div className="contact-info-upper-container">
         <div className="contact-info-container">
           <img
@@ -523,23 +542,22 @@ function App() {
       <nav>
         <div className="nav-links-container">
           <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">{translations.about}</a></li>
+            <li><a href="#technologies">{translations.tecns}</a></li>
+            <li><a href="#projects">{translations.projects}</a></li>
+            <li><a href="#contact">{translations.contact}</a></li>
           </ul>
         </div>
       </nav>
-      <p>This portfolio is made with: </p>     
+      <p>{translations.made}</p>     
       <div className="btn-container2">
         <img src="./assets/technologies/html.png" alt='html' className="icon"/>
         <img src="./assets/technologies/css.png" alt='css' className="icon-css-footer"/>
         <img src="./assets/technologies/js.png" alt='js' className="icon"/>
         <img src="./assets/technologies/react.png" alt='react' className="icon"/>
       </div>
-      <p className="copyright">Copyright &#169; 2023 Álvaro Sánchez. All Rights Reserved.</p>
+      <p className="copyright">{translations.copyright}</p>
     </footer>
-    <script src=""></script>
   </body>
 </html>
   );
