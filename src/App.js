@@ -163,7 +163,7 @@ function App() {
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => redirect('technologies')}/>
+      <img src="./assets/arrow-down.png" alt="Arrow icon" className="icon arrow" onClick={() => redirect('technologies')}/>
     </section>
     <section id="technologies">
       <p className="section__text__p1">{translations['explore-my']}</p>
@@ -266,7 +266,7 @@ function App() {
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png"
+      <img src="./assets/arrow-down.png"
       alt="Arrow icon" 
       className="icon arrow" 
       onClick={() => redirect('projects')}/>
@@ -511,7 +511,7 @@ function App() {
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/arrow-down.png"
         alt="Arrow icon"
         className="icon arrow"
         onClick={() => redirect('contact')}/>

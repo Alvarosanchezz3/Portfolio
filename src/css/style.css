@@ -500,6 +500,15 @@ article .icon {
   height: 2.5rem;
 }
 
+.arrow-up {
+  position: relative;
+  right: 5rem;
+  cursor: pointer;
+  width: 35px;
+  bottom: -20rem;
+  left: 100px;
+}
+
 /* FOOTER SECTION */
 
 footer {
