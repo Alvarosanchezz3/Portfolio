@@ -61,6 +61,7 @@ const translationsEN = {
       'spring-forms': 'Spring Forms',
       'interceps': 'Spring Interceptors',
       'errors-handling': 'Error handling in Spring',
+      'app-cliente-jpa': 'Client App - JPA',
 
       // description projects
     
@@ -93,6 +94,10 @@ const translationsEN = {
     'errors-handling-desc': 'This project demonstrates how to handle errors in an application based on the Spring framework. ' + 
                        'The project includes a handler, services, and custom exceptions to show how different types of errors' + 
                        'can be handled.',
+
+    'app-cliente-jpa-desc': 'Customer management application developed with Spring Boot. Perform CRUD operations and include' +
+                            'MVC structure, data access layer with Spring Data JPA and a web interface to list, create, ' +
+                            'edit and delete clients.',
     // Contáctame
 
     'getTouch': 'Get in Touch',

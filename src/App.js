@@ -492,6 +492,25 @@ function App() {
             </div> 
           </div>
 
+          <div className="each-project">
+            <div className="article-container">
+            <img src="./assets/projects/proyecto-JPA.png" alt='img' className="project-img" />
+            </div>
+            <h2 className="technologies-sub-title project-title">{translations['app-cliente-jpa']}</h2>
+            <p>{translations['app-cliente-jpa-desc']}</p>
+            <div className="btn-container1">
+              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
+              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
+              <img src="./assets/technologies/html.png" alt='sass' className="icon"/>
+              <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
+            </div>
+            <div className="repository">
+              <p>{translations.github}</p>
+              <a href="https://github.com/Alvarosanchezz3/SpringBoot-JPA" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/github.png" alt="Github" className="icon"/>
+              </a>
+            </div> 
+          </div>
         </div>
       </div>
       <img

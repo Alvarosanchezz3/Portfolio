@@ -58,6 +58,7 @@ const translationsES = {
       'spring-forms': 'Formularios Spring',
       'interceps': 'Interceptores Spring ',
       'errors-handling': 'Manejo de errores Spring',
+      'app-cliente-jpa': 'App Cliente - JPA',
 
     
       // description projects
@@ -92,6 +93,10 @@ const translationsES = {
       'errors-handling-desc': 'Este proyecto demuestra cómo manejar errores en una aplicación basada en el marco de Spring. ' + 
                               'El proyecto incluye un controlador, servicios y excepciones personalizadas para mostrar cómo se ' + 
                               'pueden manejar diferentes tipos de errores.',
+
+       'app-cliente-jpa-desc': 'Aplicación de gestión de clientes desarrollada con Spring Boot. Realiza operaciones CRUD e incluye' + 
+                                'estructura MVC, capa de acceso a datos con Spring Data JPA y una interfaz web para listar, crear, ' +
+                                'editar y eliminar clientes.',
 
      // Contáctame
 
