@@ -59,6 +59,7 @@ const translationsES = {
       'interceps': 'Interceptores Spring ',
       'errors-handling': 'Manejo de errores Spring',
       'app-cliente-jpa': 'App Cliente - JPA',
+      'appNba': 'App Web NBA',
 
     
       // description projects
@@ -97,6 +98,10 @@ const translationsES = {
        'app-cliente-jpa-desc': 'Aplicación de gestión de clientes desarrollada con Spring Boot. Realiza operaciones CRUD e incluye' + 
                                 'estructura MVC, capa de acceso a datos con Spring Data JPA y una interfaz web para listar, crear, ' +
                                 'editar y eliminar clientes.',
+
+        'appNba-desc': 'Una App Web de estadísticas de la NBA, desarrollada usando Angular 17, HTML, CSS en el Front-End y realizando una llamada a una Api para recibir los datos de la NBA y poder mostrarlos 🌐' +
+                  'Para poder ver las estadísticas tienes que iniciar sesión rellenando los formularios con validaciones de angular. En estos formularios se hacen llamadas a una base de datos PostgreSQL que' + 
+                  'está conectada a una API REST desarrollada en Java con el framework Spring 🚀',
 
      // Contáctame
 
