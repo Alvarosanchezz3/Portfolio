@@ -6,7 +6,7 @@
 - Estoy constantemente aprendiendo cada día para mejorar mis habilidades y mantenerme al tanto de las últimas tendencias en tecnología. Mi pasión por la programación me impulsa a explorar y crear soluciones innovadoras.
 
 ## Proyectos Destacados 🌱
-- En mi portafolio encontrarás una selección de proyectos en los que he trabajado. Desde aplicaciones web hasta aplicaciones móviles, estos proyectos representan mi experiencia en el desarrollo de software. Siéntete libre de explorarlos y descubrir más sobre mi trabajo.
+- En mi portafolio desarrollado en React encontrarás una selección de proyectos en los que he trabajado. Desde aplicaciones web hasta aplicaciones móviles, estos proyectos representan mi experiencia en el desarrollo de software. Siéntete libre de explorarlos y descubrir más sobre mi trabajo.
 
 ## Datos de Contacto 📫
 - **Correo Electrónico:** alvarosanchezvelez1@gmail.com
@@ -18,7 +18,8 @@
 - JavaScript
 - Java
 - Spring
-- React, Angular
+- React
+- Angular
 - SQL
 - Git
 
