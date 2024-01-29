@@ -100,8 +100,8 @@ const translationsES = {
                                 'estructura MVC, capa de acceso a datos con Spring Data JPA y una interfaz web para listar, crear, ' +
                                 'editar y eliminar clientes.',
 
-        'appnba-desc': 'Una App Web de estadísticas de la NBA, desarrollada usando Angular 17, HTML, CSS en el Front-End y realizando una llamada a una Api para recibir los datos de la NBA y poder mostrarlos 🌐' +
-                  'Para poder ver las estadísticas tienes que iniciar sesión rellenando los formularios con validaciones de angular. En estos formularios se hacen llamadas a una base de datos PostgreSQL que' + 
+        'appnba-desc': 'Una App Web de estadísticas de la NBA que realiza una llamada a una Api para recibir los datos de la NBA y poder mostrarlos 🌐' +
+                  'Para poder ver las estadísticas tienes que iniciar sesión rellenando los formularios con validaciones de angular. En estos formularios se hacen llamadas a una base de datos PostgreSQL que ' + 
                   'está conectada a una API REST desarrollada en Java con el framework Spring 🚀',
 
      // Contáctame

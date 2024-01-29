@@ -1,6 +1,22 @@
 // projectsData.js
 const projectsData = [
     {
+        title: 'appNba',
+        description: '',
+        videoSrc: '',
+        imageSrc: './assets/projects/nbaApp.png',
+        technologies: ['JAVA', 'SPRING', 'ANGULAR', 'HTML', 'CSS'],
+        githubLink: 'https://github.com/Alvarosanchezz3/NBA-AppWeb',
+    },
+    {
+        title: 'Client App - JPA',
+        description: '',
+        videoSrc: '',
+        imageSrc: './assets/projects/proyecto-JPA.png',
+        technologies: ['JAVA', 'SPRING', 'HTML', 'CSS'],
+        githubLink: 'https://github.com/Alvarosanchezz3/SpringBoot-JPA',
+    },
+    {
       title: 'Nike',
       description: '',
       videoSrc: './assets/projects/nikeCard.mp4',
@@ -81,22 +97,6 @@ const projectsData = [
         imageSrc: './assets/projects/errores.png',
         technologies: ['JAVA', 'SPRING', 'HTML', 'CSS'],
         githubLink: 'https://github.com/Alvarosanchezz3/SpringBoot-Errors',
-    },
-    {
-        title: 'Client App - JPA',
-        description: '',
-        videoSrc: '',
-        imageSrc: './assets/projects/proyecto-JPA.png',
-        technologies: ['JAVA', 'SPRING', 'HTML', 'CSS'],
-        githubLink: 'https://github.com/Alvarosanchezz3/SpringBoot-JPA',
-    },
-    {
-        title: 'appNba',
-        description: '',
-        videoSrc: '',
-        imageSrc: './assets/projects/nbaApp.png',
-        technologies: ['JAVA', 'SPRING', 'ANGULAR', 'HTML', 'CSS'],
-        githubLink: 'https://github.com/Alvarosanchezz3/NBA-AppWeb',
     },
     // Agrega más objetos para representar más proyectos según sea necesario
   ];
