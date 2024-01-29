@@ -335,7 +335,8 @@ article .icon {
 }
 
 .project-containers{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 5rem;
   margin-top: 3rem;
   flex-wrap: wrap;
