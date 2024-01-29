@@ -352,17 +352,10 @@ article .icon {
   flex-grow: 1;
 }
 
-.project-img {
+.project-img, .project-video  {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
-}
-
-.project-video {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-  
 }
 
 .project-title {

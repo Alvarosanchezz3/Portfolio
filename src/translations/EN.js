@@ -52,55 +52,56 @@ const translationsEN = {
       // titule projects
       'nike': 'Nike Card',
       'calculator': 'Calculator',
-      'animated-menu': 'Animated menu',
+      'animated menu': 'Animated menu',
       'login-register': 'Login-register',
-      'twd-netflix-page': 'TWD Netflix Page',
-      'weatherApp': 'WeatherApp',
-      'pokemon': 'Pokemon Couples Game',
-      'dep-iny': 'Dependency inyection',
-      'spring-forms': 'Spring Forms',
-      'interceps': 'Spring Interceptors',
-      'errors-handling': 'Error handling in Spring',
-      'app-cliente-jpa': 'Client App - JPA',
-      'appNba': 'NBA Web App',
+      'twd netflix page': 'TWD Netflix Page',
+      'weatherapp': 'WeatherApp',
+      'pokemon couples game': 'Pokemon Couples Game',
+      'api rest': 'API REST',
+      'dependency inyection': 'Dependency inyection',
+      'spring forms': 'Spring Forms',
+      'spring interceptors': 'Spring Interceptors',
+      'error handling in spring': 'Error handling in Spring',
+      'client app - jpa': 'Client App - JPA',
+      'appnba': 'NBA Web App',
 
       // description projects
     
     'nike-desc': 'Nike letter made using HTML, CSS with animations using Javascript to change the image and colors of it.',
     'calculator-desc': 'Calculator made with HTML CSS and JavaScript.',
-    'animated-menu-desc': 'Animated menu using hover, before, after... Made with HTML and SASS.',
+    'animated menu-desc': 'Animated menu using hover, before, after... Made with HTML and SASS.',
     'login-register-desc': 'Login and registration with changing background made with HTML, CSS and JavaScript.',
 
-    'twd-netflix-page-desc': 'Responsive section of the Walking Dead on Netflix. Using media queries for response' +
+    'twd netflix page-desc': 'Responsive section of the Walking Dead on Netflix. Using media queries for response' +
                         'and javascript for videos, image changes and menu openings.',
 
-    'weatherApp-desc': 'Web application that allows users to search for a city and get current weather conditions. ' +
+    'weatherapp-desc': 'Web application that allows users to search for a city and get current weather conditions. ' +
                   'Developed using HTML, CSS and JavaScript, it consumes an API to obtain data in real time.',
 
-    'pokemon-desc': 'Pokemon-themed match-finding game, made in Java using the java swing library for the graphical' +
+    'pokemon couples game-desc': 'Pokemon-themed match-finding game, made in Java using the java swing library for the graphical' +
                     'interface. They appear randomly in each game',
 
-    'api-rest-desc': 'Project in Spring Boot that provides a simple REST API to manage customer data in a PostgreSQL' + 
-                     'database and powered by Docker.',
+    'api rest-desc': 'Project in Spring Boot that provides a simple REST API to manage customer data in a PostgreSQL' + 
+                     ' database and powered by Docker.',
                     
-    'dep-iny-desc': 'Spring project developed to learn the different forms of dependency injection for code reuse, refactoring' +
+    'dependency inyection-desc': 'Spring project developed to learn the different forms of dependency injection for code reuse, refactoring' +
                'and easier testing',
 
-    'spring-forms-desc': 'Implemented form validation with Spring Framework, leveraging Thymeleaf and Bootstrap to create dynamic' +
+    'spring forms-desc': 'Implemented form validation with Spring Framework, leveraging Thymeleaf and Bootstrap to create dynamic' +
                     'and aesthetic web content.',
 
-    'interceps-desc': 'Simple project in Spring that uses an interceptor to display a welcome message to users accessing the' + 
+    'spring interceptors-desc': 'Simple project in Spring that uses an interceptor to display a welcome message to users accessing the' + 
                  'application during customer service hours and redirects to a closing page outside of customer service hours.',
 
-    'errors-handling-desc': 'This project demonstrates how to handle errors in an application based on the Spring framework. ' + 
+    'error handling in spring-desc': 'This project demonstrates how to handle errors in an application based on the Spring framework. ' + 
                        'The project includes a handler, services, and custom exceptions to show how different types of errors' + 
                        'can be handled.',
 
-    'app-cliente-jpa-desc': 'Customer management application developed with Spring Boot. Perform CRUD operations and include' +
+    'client app - jpa-desc': 'Customer management application developed with Spring Boot. Perform CRUD operations and include' +
                             'MVC structure, data access layer with Spring Data JPA and a web interface to list, create, ' +
                             'edit and delete clients.',
 
-    'appNba-desc': 'An NBA statistics Web App, developed using Angular 17, HTML, CSS in the Front-End and making a call to an API to receive the NBA data and be able to display it.' +
+    'appnba-desc': 'An NBA statistics Web App, developed using Angular 17, HTML, CSS in the Front-End and making a call to an API to receive the NBA data and be able to display it.' +
               'In order to see the statistics you have to log in by filling out the forms with angular validations. In these forms calls are made to a PostgreSQL database that' +
               ' it is connected to a REST API developed in Java with the Spring framework 🚀',
     // Contáctame

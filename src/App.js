@@ -12,6 +12,8 @@ import translationsEN from './translations/EN'; // Importa las traducciones en i
 
 import Translations  from './translations/Translations.js';
 
+import projectsData from './projects/projectsData.js';
+
 function App() {
   
   // Constantes y función para reproducir en bucle los videos
@@ -260,278 +262,41 @@ function App() {
       <h1 className="title">{translations.projects}</h1>
       <div className="technologies-details-container">
         <div className="project-containers">
-
-          <div className="each-project">
-            <div className="article-container">
-              <video src="./assets/projects/nikeCard.mp4" alt="Project 1" className="project-video" ref={video1Ref} muted/>
+        {projectsData.map((project, index) => (
+            <div className="each-project" key={index}>
+              <div className="article-container">
+                {project.videoSrc ? (
+                // Si hay un video, utilizar un elemento video
+                <video
+                  className="project-video"
+                  src={project.videoSrc} 
+                  ref={videoRefs[index]}
+                  muted
+                />
+              ) : (
+                // Si no hay video, utilizar un elemento img
+                <img
+                  src={project.imageSrc} // Asegúrate de tener una propiedad imageSrc en tus datos del proyecto
+                  alt={`Project ${index + 1}`}
+                  className="project-img"
+                />
+              )}
+              </div>
+              <h2 className="technologies-sub-title project-title">{translations[project.title.toLowerCase()]}</h2>
+              <p>{translations[`${project.title.toLowerCase()}-desc`]}</p>
+              <div className="btn-container1">
+                {project.technologies.map((tech, techIndex) => (
+                  <img key={techIndex} src={`./assets/technologies/${tech.toLowerCase()}.png`} alt={tech} className="icon" />
+                ))}
+              </div>
+              <div className="repository">
+                <p>{translations.github}</p>
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/github.png" alt="Github" className="icon" />
+                </a>
+              </div>
             </div>
-            <h2 className="technologies-sub-title project-title">{translations.nike}</h2>
-            <p>{translations['nike-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/html.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/sass.png" alt='css' className="icon"/>
-              <img src="./assets/technologies/js.png" alt='js' className="icon"/>              
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/Nike-Card" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github " className="icon"/>
-              </a>
-            </div>           
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-              <video src="./assets/projects/Calculator.mp4" alt="Project 2" className="project-video" ref={video2Ref} muted/>
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations.calculator}</h2>
-            <p>{translations['calculator-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/html.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/css.png" alt='css' className="icon-css-footer"/>
-              <img src="./assets/technologies/js.png" alt='js' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/Calculator" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-              <video src="./assets/projects/menu-animado.webm" alt="Project 3" className="project-video" ref={video3Ref} muted/>
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['animated-menu']}</h2>
-            <p>{translations['animated-menu-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/html.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/sass.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/Animated-menu" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-              <video src="./assets/projects/login.webm" alt="Project 4" className="project-video" ref={video4Ref} muted/>
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['login-register']}</h2>
-            <p>{translations['login-register-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/html.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/sass.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/js.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/Login-Registrer" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-          <div className="article-container">
-              <video src="./assets/projects/TWD-Netflix.mp4" alt="Project 5" className="project-video" ref={video5Ref} muted/>
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['twd-netflix-page']}</h2>
-            <p>{translations['twd-netflix-page-desc']}</p>
-            <div className="btn-container1">
-                <img src="./assets/technologies/html.png" alt='html' className="icon"/>
-                <img src="./assets/technologies/sass.png" alt='css' className="icon"/>
-                <img src="./assets/technologies/js.png" alt='js' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/NetflixPage" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-              <video src="./assets/projects/weatherApp.webm" alt="Project 6" className="project-video" ref={video6Ref} muted/>
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations.weatherApp}</h2>
-            <p>{translations['weatherApp-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/html.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/sass.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/js.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/WeatherApp" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-              <video src="./assets/projects/PokemonParejas.mp4" alt="Project 7" className="project-video" ref={video7Ref} muted/>
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations.pokemon}</h2>
-            <p>{translations['pokemon-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/eclipse.png" alt='html' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/Pokemon-CouplesGame" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-            <img src="./assets/projects/API REST.jpg" alt='img' className="project-img" />
-            </div>
-            <h2 className="technologies-sub-title project-title">API REST - Java</h2>
-            <p>{translations['api-rest-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/postgreSQL.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/docker.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/SpringBootAPI" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-            <img src="./assets/projects/ID-Spring.jpg" alt='img' className="project-img" />
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['dep-iny']}</h2>
-            <p>{translations['dep-iny-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/html.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/SpringBootDI" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-            <img src="./assets/projects/Forms.png" alt='img' className="project-img" />
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['spring-forms']}</h2>
-            <p>{translations['spring-forms-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/html.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/bootstrap.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/SpringBoot-Form" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-            <img src="./assets/projects/Interceptores.png" alt='img' className="project-img" />
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations.interceps}</h2>
-            <p>{translations['interceps-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/html.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/SpringBoot-Horario" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-            <img src="./assets/projects/errores.png" alt='img' className="project-img" />
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['errors-handling']}</h2>
-            <p>{translations['errors-handling-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/html.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/SpringBoot-Errors" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-            <img src="./assets/projects/proyecto-JPA.png" alt='img' className="project-img" />
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['app-cliente-jpa']}</h2>
-            <p>{translations['app-cliente-jpa-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/html.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/SpringBoot-JPA" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
-
-          <div className="each-project">
-            <div className="article-container">
-            <img src="./assets/projects/nbaApp.png" alt='img' className="project-img" />
-            </div>
-            <h2 className="technologies-sub-title project-title">{translations['appNba']}</h2>
-            <p>{translations['appNba-desc']}</p>
-            <div className="btn-container1">
-              <img src="./assets/technologies/java.png" alt='html' className="icon"/>
-              <img src="./assets/technologies/spring.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/angular.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/html.png" alt='sass' className="icon"/>
-              <img src="./assets/technologies/css.png" alt='sass' className="icon"/>
-            </div>
-            <div className="repository">
-              <p>{translations.github}</p>
-              <a href="https://github.com/Alvarosanchezz3/SpringBoot-JPA" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/github.png" alt="Github" className="icon"/>
-              </a>
-            </div> 
-          </div>
+          ))}
         </div>
       </div>
       <img
@@ -586,5 +351,4 @@ function App() {
 </html>
   );
 }
-
 export default App;
