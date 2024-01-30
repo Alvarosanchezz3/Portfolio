@@ -8,7 +8,7 @@ const translationsES = {
     'contact': "Contacto",
     
     'saludo': "Hola👋🏼, Soy",
-    'trabajo': 'Desarrollador Junior',
+    'trabajo': 'Desarrollador Full Stack',
     'CV': 'Descargar CV',
     'contact-me': 'Contáctame',
 
@@ -28,7 +28,7 @@ const translationsES = {
     'course1': 'HTML and CSS - camino a REACT',
     'course2': 'Master Java con Spring y Angular (+127h)',
 
-    'cover-letter': 'Apasionado por la programación y el mundo tecnológico de 20 años con ganas de aportar en su primer entorno laboral, seguir aprendiendo lenguajes, frameworks y mejorando cada día. Me considero una persona bastante perseverante, ambiciosa y comprometida con dar lo mejor de mí y mejorar cada día.',
+    'cover-letter': 'Soy un entusiasta de 20 años con hambre de código y pasión por la tecnología. En mi primer trabajo, busco no solo aprender, sino convertirme en un arquitecto digital. Persistente, ambicioso y comprometido, estoy aquí para superar desafíos y crear soluciones innovadoras. ¿Listos para codificar el futuro juntos?',
   
     // Tecnologías
 
@@ -61,6 +61,7 @@ const translationsES = {
       'error handling in spring': 'Manejo de errores Spring',
       'client app - jpa': 'App Cliente - JPA',
       'appnba': 'App Web NBA',
+      'urlshortener': 'Acortador de links',
 
     
       // description projects
@@ -100,9 +101,11 @@ const translationsES = {
                                 'estructura MVC, capa de acceso a datos con Spring Data JPA y una interfaz web para listar, crear, ' +
                                 'editar y eliminar clientes.',
 
-        'appnba-desc': 'Una App Web de estadísticas de la NBA que realiza una llamada a una Api para recibir los datos de la NBA y poder mostrarlos 🌐' +
-                  'Para poder ver las estadísticas tienes que iniciar sesión rellenando los formularios con validaciones de angular. En estos formularios se hacen llamadas a una base de datos PostgreSQL que ' + 
-                  'está conectada a una API REST desarrollada en Java con el framework Spring 🚀',
+        'appnba-desc': 'Una App Web de estadísticas de la NBA actuales con distintas categorías. ' +
+                  'Para poder ver las estadísticas tienes que iniciar sesión en formularios con validaciones de angular. Back-End para gestionar los usuarios ' + 
+                  '(API REST desarrollada en Java con el framework Spring 🚀)',
+
+        'urlshortener-desc': 'Acortador de urls de cualquier tipo, inicias sesión con google y puedes guardar tus links acortados para usarlos cuando quieras. Además puedes editar su descripción y borrarlos en cualquier momento.',
 
      // Contáctame
 

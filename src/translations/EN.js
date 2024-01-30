@@ -8,7 +8,7 @@ const translationsEN = {
     'contact': "Contact",
 
     'saludo': "Hello👋🏼, I'm",
-    'trabajo': 'Junior Developer',
+    'trabajo': 'Full Stack Developer',
     'CV': 'Download CV',
     'contact-me': 'Contact me',
 
@@ -28,10 +28,7 @@ const translationsEN = {
     'course1': 'HTML and CSS - path to REACT',
     'course2': 'Java Master with Spring and Angular (+127h)',
 
-    'cover-letter': '20 year old man passionate about programming and the technological world' +
-                    'with the desire to contribute in his first work environment, continue learning languages,' +
-                    'frameworks and improving every day. I consider myself a fairly persevering, ambitious and' +
-                    'committed person to give my best and improve every day.',
+    'cover-letter': 'I´m a 20-year-old enthusiast with a hunger for code and a passion for technology. In my first job, I am looking to not only learn, but become a digital architect. Persistent, ambitious and committed, I am here to overcome challenges and create innovative solutions. Ready to code the future together?',
 
     // Tecnologies
 
@@ -64,6 +61,7 @@ const translationsEN = {
       'error handling in spring': 'Error handling in Spring',
       'client app - jpa': 'Client App - JPA',
       'appnba': 'NBA Web App',
+      'urlshortener': 'URLShortener',
 
       // description projects
     
@@ -101,9 +99,11 @@ const translationsEN = {
                             'MVC structure, data access layer with Spring Data JPA and a web interface to list, create, ' +
                             'edit and delete clients.',
 
-    'appnba-desc': 'An NBA statistics Web App, developed using Angular 17, HTML, CSS in the Front-End and making a call to an API to receive the NBA data and be able to display it.' +
-              'In order to see the statistics you have to log in by filling out the forms with angular validations. In these forms calls are made to a PostgreSQL database that' +
-              ' it is connected to a REST API developed in Java with the Spring framework 🚀',
+    'appnba-desc': 'A Web App for current NBA statistics with different categories. ' +
+                  'In order to see the statistics you have to log in to forms with angular validations. Back-End to manage users ' +
+                  '(API developed in Java with Spring)',
+
+    'urlshortener-desc': 'URL shortener of any type, you log in with Google and you can save your shortened links to use them whenever you want. You can also edit their description and delete them at any time.',
     // Contáctame
 
     'getTouch': 'Get in Touch',
