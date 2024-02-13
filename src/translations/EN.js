@@ -16,6 +16,7 @@ const translationsEN = {
     // Experience 
 
     'SeeMy': 'See my',
+    'exp-desc': 'Development of an API in C# that managed the logs of a very important Hospital program and use of HTML, CSS and JavaScript to help in the creation of the Hospital´s new website. Using Git as version control to upload changes to production. I learned work methodologies such as SCRUM in meetings that organized Sprints, good practices, teamwork, adaptability...',
 
     // About me
 

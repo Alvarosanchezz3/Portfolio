@@ -16,6 +16,7 @@ const translationsES = {
    // Experience 
 
    'SeeMy': 'Vea mi',
+   'exp-desc': 'Desarrollo de una API en C# que manejaba los logs de un programa de gran importancia del Hospital y uso de HTML, CSS y JavaScript para ayuda en la creación de la nueva página web del Hospital. Uso de Git como control de versiones para subir los cambios a producción. Aprendí metodologías de trabajo como SCRUM en reuniones que organizaban los Sprints, buenas prácticas, trabajo en equipo, adaptabilidad...',
 
 
     // Sobre mí

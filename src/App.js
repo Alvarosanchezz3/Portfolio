@@ -156,7 +156,7 @@ function App() {
                 <h2>Desarrollador de software (Marzo 2023 - Julio 2023) - HUVR </h2>
                 <img src="./assets/HUVR.png" alt="huvr"></img>
               </div>  
-              <p>Desarrollo de una API en C# que manejaba los logs de un programa de gran importancia del Hospital y uso de HTML, CSS y JavaScript para ayuda en la creación de la nueva página web del Hospital. Uso de Git como control de versiones para subir los cambios a producción. Aprendí metodologías de trabajo como SCRUM en reuniones que organizaban los Sprints, buenas prácticas, trabajo en equipo, adaptabilidad...</p>  
+              <p>{translations["exp-desc"]}</p>  
            </div>
           </div>
         </section>
