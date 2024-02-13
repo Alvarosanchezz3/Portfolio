@@ -42,9 +42,14 @@
   .section-container {
     height: fit-content;
   }
-  section {
+  section, #experience {
     margin: 0 5%;
   }
+
+  .exp-title {
+    font-size: 14px;
+  }
+
   .section__pic-container1 {
     width: 350px;
     height: 350px;
@@ -71,7 +76,7 @@
   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   #projects {
     display: flex;
     flex-direction: column;
@@ -92,6 +97,11 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+
+  .exp-title {
+    font-size: 13px;
+  }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {

@@ -2,6 +2,7 @@ const translationsEN = {
     
     'title': "My portfolio",
 
+    'experience': 'Experience',
     'about': "About me",
     'tecns': "Technologies",
     'projects': "Projects",
@@ -11,6 +12,10 @@ const translationsEN = {
     'trabajo': 'Full Stack Developer',
     'CV': 'Download CV',
     'contact-me': 'Contact me',
+
+    // Experience 
+
+    'SeeMy': 'See my',
 
     // About me
 

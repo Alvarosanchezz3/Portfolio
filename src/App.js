@@ -146,6 +146,20 @@ function App() {
             </div>
           </div>
         </section>
+        <section id="experience">
+          <div>
+           <p className="section__text__p1">{translations.SeeMy}</p>
+           <h1 className="title">{translations.experience}</h1>
+            <div className="experience">
+              
+              <div className="exp-title">
+                <h2>Desarrollador de software (Marzo 2023 - Julio 2023) - HUVR </h2>
+                <img src="./assets/HUVR.png" alt="huvr"></img>
+              </div>  
+              <p>Desarrollo de una API en C# que manejaba los logs de un programa de gran importancia del Hospital y uso de HTML, CSS y JavaScript para ayuda en la creación de la nueva página web del Hospital. Uso de Git como control de versiones para subir los cambios a producción. Aprendí metodologías de trabajo como SCRUM en reuniones que organizaban los Sprints, buenas prácticas, trabajo en equipo, adaptabilidad...</p>  
+           </div>
+          </div>
+        </section>
         <section id="about">
           <p className="section__text__p1">{translations.KnowMore}</p>
           <h1 className="title">{translations.about}</h1>

@@ -229,6 +229,27 @@ section {
 .btn-container {
   gap: 1rem;
 }
+/* EXPERIENCE SECTION */
+
+#experience {
+  height: auto;
+  margin: 4rem 10rem;
+}
+
+.experience {
+  margin: 5rem 0;
+}
+
+.exp-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.exp-title img {
+  width: 50px;
+}
 
 /* ABOUT SECTION */
 
