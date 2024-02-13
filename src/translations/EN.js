@@ -73,8 +73,8 @@ const translationsEN = {
     'twd netflix page-desc': 'Responsive section of the Walking Dead on Netflix. Using media queries for response' +
                         'and javascript for videos, image changes and menu openings.',
 
-    'weatherapp-desc': 'Web application that allows users to search for a city and get current weather conditions. ' +
-                  'Developed using HTML, CSS and JavaScript, it consumes an API to obtain data in real time.',
+    'weatherapp-desc': 'Web application that allows users to search for a city and get weather conditions' +
+    ' current information, change the theme from light to dark, show your city data by geolocating you, change to degrees Fahrenheit...',
 
     'pokemon couples game-desc': 'Pokemon-themed match-finding game, made in Java using the java swing library for the graphical' +
                     'interface. They appear randomly in each game',

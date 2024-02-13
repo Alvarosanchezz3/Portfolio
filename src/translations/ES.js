@@ -75,7 +75,7 @@ const translationsES = {
                               ' y javascript para videos, cambios de imagen y aperturas de menú.',
 
       'weatherapp-desc': 'Aplicación web que permite a los usuarios buscar una ciudad y obtener las condiciones meteorológicos ' + 
-                         'actuales. Desarrollado utilizando HTML, CSS y JavaScript, consume una API para obtener los datos en tiempo real.',
+                         ' actuales de ella, cambiar el tema de claro a oscuro, mostrar los datos de tu ciudad geolocalizandote, cambiar a grados Farenheit...',
 
       'pokemon couples game-desc': 'Juego de búsqueda de parejas con temática de Pokémon, hecho en Java utilizando la biblioteca swing ' + 
                       'de Java para la interfaz gráfica. Aparecen aleatoriamente en cada juego.',

@@ -9,6 +9,15 @@ const projectsData = [
         githubLink: 'https://github.com/Alvarosanchezz3/NBA-AppWeb',
     },
     {
+        title: 'WeatherApp',
+        description: '',
+        imageSrc: '',
+        videoSrc: './assets/projects/weatherApp.mov',
+        technologies: ['REACT','JS', 'HTML', 'CSS'],
+        githubLink: 'https://github.com/Alvarosanchezz3/WeatherAppReact',
+        deploy: 'https://weather-alvarosanvel.netlify.app'
+    },
+    {
         title: 'URLShortener',
         description: '',
         videoSrc: '',
@@ -30,13 +39,6 @@ const projectsData = [
         videoSrc: './assets/projects/TWD-Netflix.mp4',
         technologies: ['HTML', 'SASS', 'JS'],
         githubLink: 'https://github.com/Alvarosanchezz3/NetflixPage',
-    },
-    {
-        title: 'WeatherApp',
-        description: '',
-        videoSrc: './assets/projects/weatherApp.webm',
-        technologies: ['HTML', 'SASS', 'JS'],
-        githubLink: 'https://github.com/Alvarosanchezz3/WeatherApp',
     },
     {
         title: 'Pokemon Couples Game',
