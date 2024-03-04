@@ -68,6 +68,7 @@ const translationsEN = {
       'client app - jpa': 'Client App - JPA',
       'appnba': 'NBA Web App',
       'urlshortener': 'URLShortener',
+      'microservices': 'Store microservices',
 
       // description projects
     
@@ -101,7 +102,7 @@ const translationsEN = {
                        'The project includes a handler, services, and custom exceptions to show how different types of errors' + 
                        'can be handled.',
 
-    'client app - jpa-desc': 'Customer management application developed with Spring Boot. Perform CRUD operations and include' +
+    'client app - jpa-desc': 'Customer management application developed with Spring Boot. Perform CRUD operations and include ' +
                             'MVC structure, data access layer with Spring Data JPA and a web interface to list, create, ' +
                             'edit and delete clients.',
 
@@ -110,6 +111,7 @@ const translationsEN = {
                   '(API developed in Java with Spring)',
 
     'urlshortener-desc': 'URL shortener of any type, you log in with Google and you can save your shortened links to use them whenever you want. You can also edit their description and delete them at any time.',
+    'microservices-desc': 'Microservices architecture for a store separated into 5 microservices: Configuration, Eureka Server, Orders (MySQL), Clients (PostgreSQL) and the Gateway that functions as a centralized entry point',
     // Contáctame
 
     'getTouch': 'Get in Touch',

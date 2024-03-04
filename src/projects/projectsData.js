@@ -26,6 +26,14 @@ const projectsData = [
         githubLink: 'https://github.com/Alvarosanchezz3/URLShortener',
     },
     {
+        title: 'Microservices',
+        description: '',
+        videoSrc: '',
+        imageSrc: './assets/projects/microservicios.jpg',
+        technologies: ['JAVA', 'SPRING', 'POSTGRESQL', 'MYSQL'],
+        githubLink: 'https://github.com/Alvarosanchezz3/First-Microservices',
+    },
+    {
         title: 'Client App - JPA',
         description: '',
         videoSrc: '',

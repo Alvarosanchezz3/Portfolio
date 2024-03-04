@@ -69,6 +69,7 @@ const translationsES = {
       'client app - jpa': 'App Cliente - JPA',
       'appnba': 'App Web NBA',
       'urlshortener': 'Acortador de links',
+      'microservices': 'Microservicios de tienda',
 
     
       // description projects
@@ -104,7 +105,7 @@ const translationsES = {
                               'El proyecto incluye un controlador, servicios y excepciones personalizadas para mostrar cómo se ' + 
                               'pueden manejar diferentes tipos de errores.',
 
-       'client app - jpa-desc': 'Aplicación de gestión de clientes desarrollada con Spring Boot. Realiza operaciones CRUD e incluye' + 
+       'client app - jpa-desc': 'Aplicación de gestión de clientes desarrollada con Spring Boot. Realiza operaciones CRUD e incluye ' + 
                                 'estructura MVC, capa de acceso a datos con Spring Data JPA y una interfaz web para listar, crear, ' +
                                 'editar y eliminar clientes.',
 
@@ -113,7 +114,7 @@ const translationsES = {
                   '(API REST desarrollada en Java con el framework Spring 🚀)',
 
         'urlshortener-desc': 'Acortador de urls de cualquier tipo, inicias sesión con google y puedes guardar tus links acortados para usarlos cuando quieras. Además puedes editar su descripción y borrarlos en cualquier momento.',
-
+        'microservices-desc': 'Arquitectura de microservicios para una tienda separada en 5 microservicios: Configuración, Servidor de Eureka, Pedidos (MySQL) , Clientes (PostgreSQL) y el Gateway que funciona como punto de entrada centralizado',
      // Contáctame
 
      'getTouch': 'Ponte en contacto',
