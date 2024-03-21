@@ -275,23 +275,23 @@ function App() {
                   </article>
                   <article>
                     <img
-                      src="./assets/technologies/react.png"
-                      alt="technologies icon"
-                      className="icon"
-                    />
-                    <div>
-                      <h3>React</h3>
-                      <p>{translations.bas}</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
                       src="./assets/technologies/angular.png"
                       alt="technologies icon"
                       className="icon"
                     />
                     <div>
                       <h3>Angular</h3>
+                      <p>{translations.int}</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/technologies/react.png"
+                      alt="technologies icon"
+                      className="icon"
+                    />
+                    <div>
+                      <h3>React</h3>
                       <p>{translations.bas}</p>
                     </div>
                   </article>
