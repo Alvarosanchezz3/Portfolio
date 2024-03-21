@@ -204,6 +204,7 @@ function App() {
                   </h3>
                   <p>{translations.course1}</p>
                   <p>{translations.course2}</p>
+                  <p>{translations.course3}</p>
                 </div>
               </div>
               <div className="text-container">
@@ -351,17 +352,17 @@ function App() {
                     />
                     <div>
                       <h3>Docker</h3>
-                      <p>{translations.bas}</p>
+                      <p>{translations.int}</p>
                     </div>
                   </article>
                   <article>
                     <img
-                      src="./assets/technologies/php.png"
+                      src="./assets/technologies/aws.png"
                       alt="technologies icon"
                       className="icon"
                     />
                     <div>
-                      <h3>PHP</h3>
+                      <h3>AWS</h3>
                       <p>{translations.bas}</p>
                     </div>
                   </article>

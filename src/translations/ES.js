@@ -16,7 +16,10 @@ const translationsES = {
    // Experience 
 
    'SeeMy': 'Vea mi',
-   'exp-desc': 'Desarrollo de una API en C# que manejaba los logs de un programa de gran importancia del Hospital y uso de HTML, CSS y JavaScript para ayuda en la creación de la nueva página web del Hospital. Uso de Git como control de versiones para subir los cambios a producción. Aprendí metodologías de trabajo como SCRUM en reuniones que organizaban los Sprints, buenas prácticas, trabajo en equipo, adaptabilidad...',
+   'exp-desc': 'Desarrollo de APIs en C# y Java que gestionaban grandes volúmenes de información, creación de funcionalidades, mantenimiento... ' +
+               'Uso de HTML, CSS y JavaScript para ayuda en la creación de la nueva página web del hospital. Uso de Git como control de versiones ' + 
+               'para subir los cambios a producción. Aprendí metodologías de trabajo como SCRUM en reuniones que organizaban los Sprints, buenas ' + 
+               'prácticas, trabajo en equipo, adaptabilidad...',
 
 
     // Sobre mí
@@ -34,6 +37,7 @@ const translationsES = {
     'courses': 'Cursos',
     'course1': 'HTML and CSS - camino a REACT',
     'course2': 'Master Java con Spring y Angular (+127h)',
+    'course3': 'Master en Spring Security 6 JWT y OAuth2',
 
     'cover-letter': 'Soy un entusiasta de 20 años con hambre de código y pasión por la tecnología. En mi primer trabajo, busco no solo aprender, sino convertirme en un arquitecto digital. Persistente, ambicioso y comprometido, estoy aquí para superar desafíos y crear soluciones innovadoras. ¿Listos para codificar el futuro juntos?',
   
