@@ -153,7 +153,7 @@ function App() {
             <div className="experience">
               
               <div className="exp-title">
-                <h2>Desarrollador de software (Marzo 2023 - Julio 2023) - HUVR </h2>
+                <h2>{translations.job}</h2>
                 <img src="./assets/HUVR.png" alt="huvr"></img>
               </div>  
               <p>{translations["exp-desc"]}</p>  
@@ -329,7 +329,7 @@ function App() {
                       className="icon"
                     />
                     <div>
-                      <h3>PostgreSQL</h3>
+                      <h3>SQL</h3>
                       <p>{translations.adv}</p>
                     </div>
                   </article>

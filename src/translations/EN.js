@@ -16,7 +16,8 @@ const translationsEN = {
     // Experience 
 
     'SeeMy': 'See my',
-    'exp-desc': 'Development of APIs in C# and Java that managed large volumes of information, creation of functionalities, maintenance... ' +
+    'job': 'Software Developer (March 2023 - July 2023) - HUVR',
+    'exp-desc': 'At the Virgen del Rocío University Hospital I carried out development of APIs in Java and C# that managed large volumes of information, creation of functionalities, maintenance... ' +
     'Use of HTML, CSS and JavaScript to help in the creation of the hospitals new website. Using Git as version control ' +
     'to upload the changes to production. I learned work methodologies such as SCRUM in meetings that organized Sprints, good ' +
     'practices, teamwork, adaptability...',
@@ -38,7 +39,7 @@ const translationsEN = {
     'course2': 'Java Master with Spring and Angular (+127h)',
     'course3': 'Master in Spring Security 6 JWT and OAuth2',
 
-    'cover-letter': 'I´m a 20-year-old enthusiast with a hunger for code and a passion for technology. In my first job, I am looking to not only learn, but become a digital architect. Persistent, ambitious and committed, I am here to overcome challenges and create innovative solutions. Ready to code the future together?',
+    'cover-letter': 'I´m a 20-year-old enthusiast with a hunger for code and a passion for technology. I am looking to not only learn, but become a digital architect. Persistent, ambitious and committed, I am here to overcome challenges and create innovative solutions. Ready to code the future together?',
 
     // Tecnologies
 
@@ -54,7 +55,7 @@ const translationsEN = {
     // projects 
 
     'explore-proyects': 'Browse My Recent',
-    'github': 'Link to the github repository:',
+    'github': 'Link to the github repository with video:',
 
       // titule projects
       'nike': 'Nike Card',
@@ -73,6 +74,7 @@ const translationsEN = {
       'appnba': 'NBA Web App',
       'urlshortener': 'URLShortener',
       'microservices': 'Store microservices',
+      's3proyect': 'User app with S3',
 
       // description projects
     
@@ -116,6 +118,8 @@ const translationsEN = {
 
     'urlshortener-desc': 'URL shortener of any type, you log in with Google and you can save your shortened links to use them whenever you want. You can also edit their description and delete them at any time.',
     'microservices-desc': 'Microservices architecture for a store separated into 5 microservices: Configuration, Eureka Server, Orders (MySQL), Clients (PostgreSQL) and the Gateway that functions as a centralized entry point',
+    's3proyect-desc': 'Full Stack user management app, containerized with Docker. Using Java and Spring on the backend, and Angular on the frontend, it integrates Amazon S3 for image storage and drag-and-drop functionality. Implementing validations on client and server',
+    
     // Contáctame
 
     'getTouch': 'Get in Touch',

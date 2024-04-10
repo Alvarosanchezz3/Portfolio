@@ -16,7 +16,8 @@ const translationsES = {
    // Experience 
 
    'SeeMy': 'Vea mi',
-   'exp-desc': 'Desarrollo de APIs en C# y Java que gestionaban grandes volúmenes de información, creación de funcionalidades, mantenimiento... ' +
+   'job': 'Desarrollador de software (Marzo 2023 - Julio 2023) - HUVR',
+   'exp-desc': 'En el Hospital Universitario Virgen del Rocío realicé desarrollo de APIs en Java y C# que gestionaban grandes volúmenes de información, creación de funcionalidades, mantenimiento... ' +
                'Uso de HTML, CSS y JavaScript para ayuda en la creación de la nueva página web del hospital. Uso de Git como control de versiones ' + 
                'para subir los cambios a producción. Aprendí metodologías de trabajo como SCRUM en reuniones que organizaban los Sprints, buenas ' + 
                'prácticas, trabajo en equipo, adaptabilidad...',
@@ -39,7 +40,7 @@ const translationsES = {
     'course2': 'Master Java con Spring y Angular (+127h)',
     'course3': 'Master en Spring Security 6 JWT y OAuth2',
 
-    'cover-letter': 'Soy un entusiasta de 20 años con hambre de código y pasión por la tecnología. En mi primer trabajo, busco no solo aprender, sino convertirme en un arquitecto digital. Persistente, ambicioso y comprometido, estoy aquí para superar desafíos y crear soluciones innovadoras. ¿Listos para codificar el futuro juntos?',
+    'cover-letter': 'Soy un entusiasta de 20 años con hambre de código y pasión por la tecnología. Busco no solo aprender, sino convertirme en un arquitecto digital. Persistente, ambicioso y comprometido, estoy aquí para superar desafíos y crear soluciones innovadoras. ¿Listos para codificar el futuro juntos?',
   
     // Tecnologías
 
@@ -55,7 +56,7 @@ const translationsES = {
      // Proyectos
 
      'explore-proyects': 'Explora mis',
-     'github': 'Link al repositorio de Github: ',
+     'github': 'Link al repositorio de Github con video: ',
 
       // titulos
       'nike': 'Carta nike',
@@ -74,6 +75,7 @@ const translationsES = {
       'appnba': 'App Web NBA',
       'urlshortener': 'Acortador de links',
       'microservices': 'Microservicios de tienda',
+      's3proyect': 'App de usuarios con S3',
 
     
       // description projects
@@ -109,17 +111,19 @@ const translationsES = {
                               'El proyecto incluye un controlador, servicios y excepciones personalizadas para mostrar cómo se ' + 
                               'pueden manejar diferentes tipos de errores.',
 
-       'client app - jpa-desc': 'Aplicación de gestión de clientes desarrollada con Spring Boot. Realiza operaciones CRUD e incluye ' + 
+      'client app - jpa-desc': 'Aplicación de gestión de clientes desarrollada con Spring Boot. Realiza operaciones CRUD e incluye ' + 
                                 'estructura MVC, capa de acceso a datos con Spring Data JPA y una interfaz web para listar, crear, ' +
                                 'editar y eliminar clientes.',
 
-        'appnba-desc': 'Una App Web de estadísticas de la NBA actuales con distintas categorías. ' +
+      'appnba-desc': 'Una App Web de estadísticas de la NBA actuales con distintas categorías. ' +
                   'Para poder ver las estadísticas tienes que iniciar sesión en formularios con validaciones de angular. Back-End para gestionar los usuarios ' + 
                   '(API REST desarrollada en Java con el framework Spring 🚀)',
 
-        'urlshortener-desc': 'Acortador de urls de cualquier tipo, inicias sesión con google y puedes guardar tus links acortados para usarlos cuando quieras. Además puedes editar su descripción y borrarlos en cualquier momento.',
-        'microservices-desc': 'Arquitectura de microservicios para una tienda separada en 5 microservicios: Configuración, Servidor de Eureka, Pedidos (MySQL) , Clientes (PostgreSQL) y el Gateway que funciona como punto de entrada centralizado',
-     // Contáctame
+      'urlshortener-desc': 'Acortador de urls de cualquier tipo, inicias sesión con google y puedes guardar tus links acortados para usarlos cuando quieras. Además puedes editar su descripción y borrarlos en cualquier momento.',
+      'microservices-desc': 'Arquitectura de microservicios para una tienda separada en 5 microservicios: Configuración, Servidor de Eureka, Pedidos (MySQL) , Clientes (PostgreSQL) y el Gateway que funciona como punto de entrada centralizado',
+      's3proyect-desc': 'App Full Stack de gestión de usuarios, contenerizada con Docker. Utilizando Java y Spring en el backend, y Angular en el frontend, integra Amazon S3 para almacenamiento de imágenes y funcionalidades de arrastrar y soltar. Implementando validaciones en cliente y servidor',
+    
+        // Contáctame
 
      'getTouch': 'Ponte en contacto',
 

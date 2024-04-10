@@ -1,21 +1,12 @@
 // projectsData.js
 const projectsData = [
     {
-        title: 'appNba',
+        title: 'S3Proyect',
         description: '',
         videoSrc: '',
-        imageSrc: './assets/projects/nbaApp.png',
-        technologies: ['JAVA', 'SPRING', 'ANGULAR', 'HTML', 'CSS'],
-        githubLink: 'https://github.com/Alvarosanchezz3/NBA-AppWeb',
-    },
-    {
-        title: 'WeatherApp',
-        description: '',
-        imageSrc: '',
-        videoSrc: './assets/projects/weatherApp.mov',
-        technologies: ['REACT','JS', 'HTML', 'CSS'],
-        githubLink: 'https://github.com/Alvarosanchezz3/WeatherAppReact',
-        deploy: 'https://weather-alvarosanvel.netlify.app'
+        imageSrc: './assets/projects/S3Proyect.png',
+        technologies: ['JAVA', 'SPRING', 'ANGULAR','AWS', 'DOCKER'],
+        githubLink: 'https://github.com/Alvarosanchezz3/S3Proyect',
     },
     {
         title: 'URLShortener',
@@ -26,6 +17,14 @@ const projectsData = [
         githubLink: 'https://github.com/Alvarosanchezz3/URLShortener',
     },
     {
+        title: 'appNba',
+        description: '',
+        videoSrc: '',
+        imageSrc: './assets/projects/nbaApp.png',
+        technologies: ['JAVA', 'SPRING', 'ANGULAR', 'HTML', 'CSS'],
+        githubLink: 'https://github.com/Alvarosanchezz3/NBA-AppWeb',
+    },
+    {
         title: 'Microservices',
         description: '',
         videoSrc: '',
@@ -33,6 +32,16 @@ const projectsData = [
         technologies: ['JAVA', 'SPRING', 'POSTGRESQL', 'MYSQL'],
         githubLink: 'https://github.com/Alvarosanchezz3/First-Microservices',
     },
+    {
+        title: 'WeatherApp',
+        description: '',
+        imageSrc: '',
+        videoSrc: './assets/projects/weatherApp.mov',
+        technologies: ['REACT','JS', 'HTML', 'CSS'],
+        githubLink: 'https://github.com/Alvarosanchezz3/WeatherAppReact',
+        deploy: 'https://weather-alvarosanvel.netlify.app'
+    },
+    
     {
         title: 'Client App - JPA',
         description: '',

@@ -418,6 +418,10 @@ article .icon {
   margin-left: 10px;
 }
 
+.repository a:hover {
+  scale: 1.15;
+}
+
 /* CONTACT */
 
 #contact {
