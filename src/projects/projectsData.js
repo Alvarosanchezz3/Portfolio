@@ -14,7 +14,7 @@ const projectsData = [
         videoSrc: '',
         imageSrc: './assets/projects/URLShortener.png',
         technologies: ['JAVA', 'SPRING', 'ANGULAR', 'HTML', 'CSS'],
-        githubLink: 'https://github.com/Alvarosanchezz3/URLShortener',
+        githubLink: 'https://github.com/Alvarosanchezz3/URL-Shortener',
     },
     {
         title: 'appNba',
