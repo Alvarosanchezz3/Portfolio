@@ -22,7 +22,7 @@ const projectsData = [
         videoSrc: '',
         imageSrc: './assets/projects/nbaApp.png',
         technologies: ['JAVA', 'SPRING', 'ANGULAR', 'HTML', 'CSS'],
-        githubLink: 'https://github.com/Alvarosanchezz3/NBA-AppWeb',
+        githubLink: 'https://github.com/Alvarosanchezz3/NBA-App',
     },
     {
         title: 'Microservices',
