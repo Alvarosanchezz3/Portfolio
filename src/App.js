@@ -418,6 +418,7 @@ function App() {
                   </div>
                   <div className="repository">
                     <p>{translations.github}</p>
+                    {project.githubLink && (
                     <a
                       href={project.githubLink}
                       target="_blank"
@@ -429,6 +430,7 @@ function App() {
                         className="icon"
                       />
                     </a>
+                    )}
                     {project.deploy && (
                       <a
                         href={project.deploy}

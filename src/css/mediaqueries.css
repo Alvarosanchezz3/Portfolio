@@ -1,3 +1,9 @@
+@media screen and (max-width: 1880px) {
+  .project-containers{
+    gap: 3rem;
+  }
+}
+
 @media screen and (max-width: 1537px) {
   #profile {
     height: 83vh;

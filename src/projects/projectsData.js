@@ -1,6 +1,14 @@
 // projectsData.js
 const projectsData = [
     {
+        title: 'BackEnd-Docs',
+        description: '',
+        videoSrc: '',
+        imageSrc: './assets/projects/docs-web.png',
+        technologies: ['ANGULAR','JAVA', 'SPRING', 'AWS', 'DOCKER', 'KAFKA'],
+        deploy: 'https://back-end-java-docs.web.app/home'
+    },
+    {
         title: 'S3Proyect',
         description: '',
         videoSrc: '',

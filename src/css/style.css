@@ -411,7 +411,7 @@ article .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .repository a{

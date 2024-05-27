@@ -56,7 +56,7 @@ const translationsES = {
      // Proyectos
 
      'explore-proyects': 'Explora mis',
-     'github': 'Link al repositorio de Github con video: ',
+     'github': 'Enlaces relacionados al proyecto: ',
 
       // titulos
       'nike': 'Carta nike',
@@ -76,6 +76,7 @@ const translationsES = {
       'urlshortener': 'Acortador de links',
       'microservices': 'Microservicios de tienda',
       's3proyect': 'App de usuarios con S3',
+      'backend-docs': 'Doc BackEnd sobre Java',
 
     
       // description projects
@@ -122,7 +123,8 @@ const translationsES = {
       'urlshortener-desc': 'Acortador de urls de cualquier tipo, inicias sesión con google y puedes guardar tus links acortados para usarlos cuando quieras. Además puedes editar su descripción y borrarlos en cualquier momento.',
       'microservices-desc': 'Arquitectura de microservicios para una tienda separada en 5 microservicios: Configuración, Servidor de Eureka, Pedidos (MySQL) , Clientes (PostgreSQL) y el Gateway que funciona como punto de entrada centralizado',
       's3proyect-desc': 'App Full Stack de gestión de usuarios, contenerizada con Docker. Utilizando Java y Spring en el backend, y Angular en el frontend, integra Amazon S3 para almacenamiento de imágenes y funcionalidades de arrastrar y soltar. Implementando validaciones en cliente y servidor',
-    
+      'backend-docs-desc': 'Documentación sobre Back-End con Java usando Angular 17, inspirada en la documentación de Spring. Esta guía completamente responsive cubre temas esenciales como Spring Framework, Spring Web, Spring Security, Docker, AWS, microservicios, Apache Kafka...',
+
         // Contáctame
 
      'getTouch': 'Ponte en contacto',

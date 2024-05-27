@@ -55,7 +55,7 @@ const translationsEN = {
     // projects 
 
     'explore-proyects': 'Browse My Recent',
-    'github': 'Link to the github repository with video:',
+    'github': 'Links related to the project:',
 
       // titule projects
       'nike': 'Nike Card',
@@ -75,6 +75,7 @@ const translationsEN = {
       'urlshortener': 'URLShortener',
       'microservices': 'Store microservices',
       's3proyect': 'User app with S3',
+      'backend-docs': 'BackEnd docs for Java',
 
       // description projects
     
@@ -119,7 +120,8 @@ const translationsEN = {
     'urlshortener-desc': 'URL shortener of any type, you log in with Google and you can save your shortened links to use them whenever you want. You can also edit their description and delete them at any time.',
     'microservices-desc': 'Microservices architecture for a store separated into 5 microservices: Configuration, Eureka Server, Orders (MySQL), Clients (PostgreSQL) and the Gateway that functions as a centralized entry point',
     's3proyect-desc': 'Full Stack user management app, containerized with Docker. Using Java and Spring on the backend, and Angular on the frontend, it integrates Amazon S3 for image storage and drag-and-drop functionality. Implementing validations on client and server',
-    
+    'backend-docs-desc': 'Documentation on Back-End with Java using Angular 17, inspired by Spring documentation. This fully responsive guide covers essential topics such as Spring Framework, Spring Web, Spring Security, Docker, AWS, microservices, Apache Kafka...',
+
     // Contáctame
 
     'getTouch': 'Get in Touch',
